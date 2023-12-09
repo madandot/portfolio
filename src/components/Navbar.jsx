@@ -8,11 +8,9 @@ import { SlMenu } from "react-icons/sl";
 
 const Navbar = () => {
    const [mobileMenu, setMobileMenu] = useState(false);
-
    const closeMobileMenu = () => {
       setMobileMenu(false);
    };
-
    const openMobileMenu = () => {
       setMobileMenu(true);
    };
@@ -35,7 +33,7 @@ const Navbar = () => {
                   {mobileMenu ? <VscChromeClose onClick={closeMobileMenu} /> : <SlMenu onClick={openMobileMenu} />}
                   {mobileMenu && (
                      <div
-                        className={`absolute  mt-4 right-0 top-14 bg-[#0f1722] w-full transition-transform duration-1000 ease-in-out transform ${
+                        className={`absolute  mt-4 right-0 top-14 bg-[#0f1722] w-full transition-transform duration-1000 ease-in transform ${
                            mobileMenu ? "top-20" : "top-[-420px]"
                         }`}
                      >
