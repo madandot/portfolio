@@ -4,6 +4,7 @@ import ContentWrapper from "./ContentWrapper";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 import { CiSaveDown1 } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 import "../app/globals.css";
 const HeroBanner = () => {
    const handleDownload = () => {
@@ -33,14 +34,21 @@ const HeroBanner = () => {
                      Passionate web developer dedicated to creating intuitive digital experiences. Strong design foundation with a knack for
                      translating complex ideas into engaging interfaces.
                   </p>
-
-                  <button
-                     className='mt-8 flex  items-center gap-x-4 px-8 py-4 bg-[#47bd8a] text-black rounded font-medium text-2xl border-4 border-[#47bd8a]'
-                     onClick={handleDownload}
-                  >
-                     Resume
-                     <CiSaveDown1 size={25} />
-                  </button>
+                  <div className='flex items-center gap-2'>
+                     <button
+                        className='mt-8 flex  items-center gap-x-2 px-4 py-4  text-white rounded font-medium text-2xl border-4 border-[#47bd8a]'
+                        onClick={handleDownload}
+                     >
+                        Resume
+                        <CiSaveDown1 size={25} />
+                     </button>
+                     <button
+                        onClick={() => window.open("https://github.com/madandot", "_target")}
+                        className='mt-8 flex  items-center gap-x-2  px-4 py-4  text-white rounded font-medium text-2xl border-4 border-orange-600'
+                     >
+                        GitHub <FaGithub />
+                     </button>
+                  </div>
                </div>
                <div className='one'>
                   <Image src={"/images/HeroBanner.jpg"} width={500} height={500} className=' rounded' />

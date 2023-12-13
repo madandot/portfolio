@@ -27,6 +27,7 @@ const Navbar = () => {
                <div className='md:flex hidden items-center gap-x-10 font-bold'>
                   <Link href={"/skills"}>Skills</Link>
                   <Link href={"/project"}>Projects</Link>
+                  <Link href={"/resume"}>Resume</Link>
                   <Link href={"/about"}>About</Link>
                </div>
                <div className='flex md:hidden  items-center'>
@@ -40,6 +41,7 @@ const Navbar = () => {
                         <div className='rounded flex  flex-col gap-y-12 py-4 px-8 text-2xl'>
                            <Link href={"/skills"}>Skills</Link>
                            <Link href={"/project"}>Projects</Link>
+                           <Link href={"/resume"}>Resume</Link>
                            <Link href={"/about"}>About</Link>
                         </div>
                      </div>
