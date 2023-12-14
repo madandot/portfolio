@@ -1,4 +1,5 @@
 import HeroBanner from "@/components/HeroBanner";
+import Projects from "@/components/Projects";
 import Skill from "@/components/Skill";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
       <div>
          <HeroBanner />
          <Skill />
+         <Projects />
       </div>
    );
 }

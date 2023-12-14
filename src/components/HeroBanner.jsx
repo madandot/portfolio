@@ -9,7 +9,6 @@ import "../app/globals.css";
 const HeroBanner = () => {
    const handleDownload = () => {
       const fileUrl = "https://drive.google.com/file/d/1mzEOIIba0IKIRgTLYCGkQKfJ6KHwdfPA/view?usp=sharing";
-
       const link = document.createElement("a");
       link.href = fileUrl;
       link.target = "_blank"; // Set the target to _blank to open in a new tab
@@ -21,22 +20,21 @@ const HeroBanner = () => {
          <ContentWrapper>
             <div className='pt-28 px-7 flex md:flex-row flex-col-reverse gap-y-4 md:gap-y-0 justify-between items-center w-full'>
                <div>
-                  <h1 className='py-2 md:text-5xl text-3xl md:font-extrabold cursor-pointer '>HI, I AM MADAN H</h1>
+                  <h1 className='py-2 md:text-3xl text-3xl md:font-extrabold cursor-pointer '>HI, I AM MADAN H</h1>
                   <TypeAnimation
                      sequence={["WEB DEVELOPER", 1000, "", 1000]}
                      wrapper='span'
                      speed={10}
-                     style={{ fontSize: "2em", display: "inline-block", color: "white" }}
-                     className=' md:font-bold pt-4'
+                     className=' md:font-bold text-2xl pt-4 text-transparent bg-clip-text bg-gradient-to-l from-[#ffecd1] to-[#483c32]'
                      repeat={Infinity}
                   />
-                  <p className=' md:font-medium text-white/50 md:text-2xl pt-4 md:w-[700px]'>
+                  <p className=' md:font-medium text-white/50 md:text-xl pt-4 md:w-[700px]'>
                      Passionate web developer dedicated to creating intuitive digital experiences. Strong design foundation with a knack for
                      translating complex ideas into engaging interfaces.
                   </p>
                   <div className='flex items-center gap-2'>
                      <button
-                        className='mt-8 flex  items-center gap-x-2 px-4 py-4  text-white rounded font-medium text-2xl border-4 border-[#47bd8a]'
+                        className='mt-8 flex  items-center gap-x-2 px-4 py-4 text-white rounded font-medium text-xl border-[3px] border-[#483c32] hover:shadow-md hover:shadow-[#ffecd1] transition-all duration-300 ease-in'
                         onClick={handleDownload}
                      >
                         Resume
@@ -44,7 +42,7 @@ const HeroBanner = () => {
                      </button>
                      <button
                         onClick={() => window.open("https://github.com/madandot", "_target")}
-                        className='mt-8 flex  items-center gap-x-2  px-4 py-4  text-white rounded font-medium text-2xl border-4 border-orange-600'
+                        className='mt-8 flex  items-center gap-x-2  px-4 py-4  text-white rounded font-medium text-xl border-[3px] border-[#483c32] hover:shadow-md hover:shadow-[#ffecd1] transition-all duration-300 ease-in'
                      >
                         GitHub <FaGithub />
                      </button>
