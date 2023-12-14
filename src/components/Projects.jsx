@@ -18,10 +18,10 @@ const Projects = () => {
                   <FaProjectDiagram size={40} className='text-white/40' />
                   <p>projects</p>
                </div>
-               <div className=' grid md:grid-cols-2 gap-4'>
+               <div className=' grid md:grid-cols-2 gap-4 '>
                   <div className='flex flex-col items-center justify-center bg-[#ffecd1]/10 py-2 px-2 w-fit rounded shadow-lg'>
                      <Image src={I1} width={500} height={500} />
-                     <h1 className='text-2xl capitalize pt-4 text-white font-bold'>filmplex</h1>
+                     <h1 className='text-2xl uppercase pt-4 text-white font-bold'>filmplex</h1>
                      <div className='flex flex-col md:flex-row items-center gap-2'>
                         <button
                            onClick={() => window.open("https://filmplex.vercel.app/", "_target")}
@@ -43,7 +43,7 @@ const Projects = () => {
                   </div>
                   <div className='flex flex-col items-center justify-center bg-[#ffecd1]/10 py-2 px-2 w-fit rounded shadow-lg'>
                      <Image src={I2} width={500} height={500} />
-                     <h1 className='text-2xl capitalize pt-4 text-white font-bold'>LIGHT STUDIO</h1>
+                     <h1 className='text-2xl uppercase pt-4 text-white font-bold'>LIGHT STUDIO</h1>
                      <div className='flex flex-col md:flex-row items-center gap-2'>
                         <button
                            onClick={() => window.open("https://light-studio-ten.vercel.app/", "_target")}
@@ -65,7 +65,7 @@ const Projects = () => {
                   </div>
                   <div className='flex flex-col items-center justify-center bg-[#ffecd1]/10 py-2 px-2 w-fit rounded shadow-lg'>
                      <Image src={I3} width={500} height={500} />
-                     <h1 className='text-2xl capitalize pt-4 text-white font-bold'>I AM DONE</h1>
+                     <h1 className='text-2xl uppercase pt-4 text-white font-bold'>I AM DONE</h1>
                      <div className='flex flex-col md:flex-row items-center gap-2'>
                         <button
                            onClick={() => window.open("https://i-am-done.netlify.app/", "_target")}
@@ -87,7 +87,7 @@ const Projects = () => {
                   </div>
                   <div className='flex flex-col items-center justify-center bg-[#ffecd1]/10 py-2 px-2 w-fit rounded shadow-lg'>
                      <Image src={I4} width={500} height={500} />
-                     <h1 className='text-2xl capitalize pt-4 text-white font-bold'>gpt-3</h1>
+                     <h1 className='text-2xl uppercase pt-4 text-white font-bold'>gpt-3</h1>
                      <div className='flex flex-col md:flex-row items-center gap-2'>
                         <button
                            onClick={() => window.open("https://react-project-theta-rose.vercel.app/", "_target")}

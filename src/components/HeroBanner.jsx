@@ -20,7 +20,7 @@ const HeroBanner = () => {
          <ContentWrapper>
             <div className='pt-28 px-7 flex md:flex-row flex-col-reverse gap-y-4 md:gap-y-0 justify-between items-center w-full'>
                <div>
-                  <h1 className='py-2 md:text-3xl text-3xl md:font-extrabold cursor-pointer '>HI, I AM MADAN H</h1>
+                  <h1 className='py-2 md:text-3xl text-3xl md:font-extrabold cursor-pointer capitalize '>Hi, I am Madan HanumanthaReddy</h1>
                   <TypeAnimation
                      sequence={["WEB DEVELOPER", 1000, "", 1000]}
                      wrapper='span'
