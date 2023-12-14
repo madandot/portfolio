@@ -46,7 +46,7 @@ const Navbar = () => {
                            mobileMenu ? "top-20" : "top-[-420px]"
                         }`}
                      >
-                        <div className='rounded flex  flex-col gap-y-12 py-4 px-8 text-2xl'>
+                        <div className='rounded flex  flex-col gap-y-12 py-4 px-8 text-2xl mb-4'>
                            <Link href={"/skills"} onClick={handleLinkClick}>
                               Skills
                            </Link>
