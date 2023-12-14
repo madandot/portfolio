@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import "../app/globals.css";
 const HeroBanner = () => {
    const handleDownload = () => {
-      const fileUrl = "https://drive.google.com/file/d/17YSiKa5xbgCSWZxNxPoYneKebADXHCmy/view?usp=sharing";
+      const fileUrl = "https://drive.google.com/file/d/1DkIIkKI_BRRXNhfZVRkr-FmPkkpjYWcV/view?usp=sharing";
       const link = document.createElement("a");
       link.href = fileUrl;
       link.target = "_blank"; // Set the target to _blank to open in a new tab
