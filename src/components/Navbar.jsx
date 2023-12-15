@@ -37,6 +37,9 @@ const Navbar = () => {
                   <Link href={"/resume"} onClick={handleLinkClick}>
                      Resume
                   </Link>
+                  <Link href={"/certificate"} onClick={handleLinkClick}>
+                     certificate
+                  </Link>
                </div>
                <div className='flex md:hidden  items-center'>
                   {mobileMenu ? <VscChromeClose onClick={closeMobileMenu} /> : <SlMenu onClick={openMobileMenu} />}
@@ -55,6 +58,9 @@ const Navbar = () => {
                            </Link>
                            <Link href={"/resume"} onClick={handleLinkClick}>
                               Resume
+                           </Link>
+                           <Link href={"/certificate"} onClick={handleLinkClick}>
+                              certificate
                            </Link>
                         </div>
                      </div>

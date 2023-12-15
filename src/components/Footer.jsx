@@ -7,7 +7,7 @@ const Footer = () => {
    return (
       <div>
          <ContentWrapper>
-            <div className='px-7 mt-20 h-[200px] flex flex-col items-center justify-center'>
+            <div className='px-7 mt-20 mb-20 flex flex-col items-center justify-center'>
                <div>
                   <p className='flex items-center gap-2'>
                      Find an issue with this page?{" "}
