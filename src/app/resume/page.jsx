@@ -74,10 +74,10 @@ const Resume = () => {
                   <div className='py-2'>
                      <h1 className='text-xl font-bold pb-2'>Projects :</h1>
                      <p>
-                        1. <b className='text-[#00fe87] cursor-pointer'>FILMPLEX</b> <br />• Developed a robust website utilizing TMDBs REST
-                        API with React for the frontend, enhancing user interaction and experience. <br />• Implemented global search
-                        functionality, empowering users to discover TV shows and movies effortlessly. <br />• Technologies: JavaScript,
-                        React, TMDB API, React-Redux, Tailwind CSS. <br />
+                        1. <b className='text-[#00fe87] cursor-pointer'>FILMPLEX</b> <br />• Developed a robust website utilizing
+                        TMDB&apos;s REST API with React for the frontend, enhancing user interaction and experience. <br />• Implemented
+                        global search functionality, empowering users to discover TV shows and movies effortlessly. <br />• Technologies:
+                        JavaScript, React, TMDB API, React-Redux, Tailwind CSS. <br />
                         2. <b className='text-[#00fe87] cursor-pointer'> LIGHT STUDIO</b> <br />• Engineered an intuitive item listing
                         platform with advanced filtering and sorting capabilities, optimizing user navigation. <br />• Created
                         individualized item pages showcasing comprehensive details, enhancing user engagement and decision-making. <br />•
@@ -88,8 +88,8 @@ const Resume = () => {
                      <h1 className='text-xl font-bold pb-2'>PERSONAL INFORMATION :</h1>
                      <p>
                         {" "}
-                        <b> NATIONALITY</b> – Indian <br /> <b> LANGUAGES KNOWN</b> - English (Fluent, Kannada, and Telugu <br />{" "}
-                        <b>ADDRESS</b> – Bangalore – Karnataka{" "}
+                        <b> NATIONALITY</b> – Indian <br /> <b> LANGUAGES KNOWN</b> - English (Fluent), Kannada, and Telugu <br />
+                        <b>ADDRESS</b> – Bangalore – Karnataka
                      </p>
                   </div>
                   <div className='py-2 text-center'>
