@@ -19,7 +19,10 @@ const Skill = () => {
                   <p>Css</p>
                </div>
                <div className='flex flex-col items-center bg-[#2a2e35] py-4 rounded cursor-pointer hover:shadow-lg hover:shadow-[#38b2ac] transition-all duration-300 ease-in'>
-                  <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' className='w-[100px]' />
+                  <img
+                     src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'
+                     className='w-[100px]'
+                  />
                   <p>TailwindCss</p>
                </div>
                <div className='flex flex-col items-center  cursor-pointer bg-[#2a2e35] py-4 rounded hover:shadow-lg hover:shadow-[#f0db4f] transition-all duration-300 ease-in'>
