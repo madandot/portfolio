@@ -45,7 +45,7 @@ const Navbar = () => {
                   {mobileMenu ? <VscChromeClose onClick={closeMobileMenu} /> : <SlMenu onClick={openMobileMenu} />}
                   {mobileMenu && (
                      <div
-                        className={`absolute  mt-4 right-0 top-[55px] bg-[#1e2328] w-full transition-transform duration-1000 ease-in transform ${
+                        className={`absolute  mt-4 right-0 top-[55px] bg-[#000000] w-full transition-transform duration-1000 ease-in transform ${
                            mobileMenu ? "top-20" : "top-[-420px]"
                         }`}
                      >
