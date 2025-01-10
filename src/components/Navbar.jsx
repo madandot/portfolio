@@ -17,9 +17,9 @@ const Navbar = () => {
    };
 
    return (
-      <div className='fixed w-full bg-white text-black'>
+      <div className='fixed top-0 left-0 w-full z-50 '>
          <ContentWrapper>
-            <div className='flex justify-between items-center text-base font-sans font-medium py-8 px-8'>
+            <div className='flex justify-between items-center text-base font-sans font-medium p-6'>
                <div>
                   <Link href={"/"}>
                      <h1>&copy; code by Madan</h1>
@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
             {mobileMenu && (
                <div
-                  className={`absolute right-0 top-20 bg-white text-black w-full h-screen text-center  transition duration-1000 ease-in-out transform ${
+                  className={`absolute right-0 top-20  w-full h-screen text-center  transition duration-1000 ease-in-out transform ${
                      mobileMenu ? "translate-y-0" : "-translate-y-full"
                   }`}
                   style={{ zIndex: 50 }}
