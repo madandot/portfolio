@@ -27,4 +27,9 @@ body {
   .one {
     display: none;
   }
+
+  .icon {
+    font-size: 200px;
+  }
+
 }

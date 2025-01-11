@@ -45,12 +45,12 @@ const Navbar = () => {
             </div>
             {mobileMenu && (
                <div
-                  className={`absolute right-0 top-20  w-full h-screen text-center  transition duration-1000 ease-in-out transform ${
+                  className={`absolute right-0  bg-[#999d9e] flex justify-center items-center  w-full h-screen text-center  transition duration-1000 ease-in-out transform ${
                      mobileMenu ? "translate-y-0" : "-translate-y-full"
                   }`}
                   style={{ zIndex: 50 }}
                >
-                  <div className='rounded flex flex-col gap-y-12 py-4 px-8 text-2xl mb-4'>
+                  <div className='rounded flex flex-col gap-y-12 py-4 px-8 text-2xl mb-4 font-{Dennis Sans, sans-serif} animate-slide-up'>
                      <Link href={"/skills"} onClick={handleLinkClick}>
                         Work
                      </Link>
@@ -67,6 +67,22 @@ const Navbar = () => {
                </div>
             )}
          </ContentWrapper>
+         <style jsx>{`
+            /* Animation for location button */
+            @keyframes slideUp {
+               0% {
+                  transform: translateY(20px);
+                  opacity: 0;
+               }
+               100% {
+                  transform: translateY(0);
+                  opacity: 1;
+               }
+            }
+            .animate-slide-up {
+               animation: slideUp 1.5s ease-out;
+            }
+         `}</style>
       </div>
    );
 };
