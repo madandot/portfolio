@@ -2,6 +2,8 @@
 import React from "react";
 import ContentWrapper from "./ContentWrapper";
 import { IoIosArrowRoundDown } from "react-icons/io";
+import Image from "next/image";
+import I1 from "../../public/images/Home.jpeg";
 
 const Skill = () => {
    return (
@@ -14,9 +16,11 @@ const Skill = () => {
                   <IoIosArrowRoundDown size={50} className='animate-slide-up icon md:hidden flex' />
                </div>
             </div>
-            <div className='bg-white text-black'>
-               <div></div>
-               <div></div>
+            <div className='bg-white text-black flex justify-between items-center h-screen'>
+               <div>one</div>
+               <div>
+                  <Image src={I1} width={800} height={927} />
+               </div>
             </div>
          </ContentWrapper>
          <style jsx>{`
