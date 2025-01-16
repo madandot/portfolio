@@ -19,7 +19,7 @@ const Navbar = () => {
    return (
       <div className='fixed top-0 left-0 w-full z-50 '>
          <ContentWrapper>
-            <div className='flex justify-between items-center text-base font-sans font-medium p-6'>
+            <div className='flex justify-between items-center text-base font-sans font-medium p-6 bg-[#999d9e]'>
                <div>
                   <Link href={"/"}>
                      <h1>&copy; code by Madan</h1>
