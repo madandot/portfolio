@@ -3,11 +3,16 @@ import React from "react";
 
 import ContentWrapper from "./ContentWrapper";
 import { IoIosArrowRoundDown } from "react-icons/io";
+import { SiCanva } from "react-icons/si";
+import { SiNovu } from "react-icons/si";
+import { GrResume } from "react-icons/gr";
+import { FaSquarespace } from "react-icons/fa";
+
 import Image from "next/image";
 import I1 from "../../public/images/Home02.jpeg";
-import I2 from "../../public/images/competitor analysis.png";
-import I3 from "../../public/images/competitor analysis 02.png";
-import { FaStar } from "react-icons/fa";
+import I2 from "../../public/images/men.jpg";
+import I3 from "../../public/images/gettyimages.jpg";
+import I4 from "../../public/images/women.JPG";
 
 const Skill = () => {
    return (
@@ -59,7 +64,7 @@ const Skill = () => {
                      </div>
                   </div>
                   <div>
-                     <h1 className='md:w-[400px] mt-5 font-{Dennis Sans, sans-serif} text-6xl font-normal leading-[70px] -tracking-[-1.3px] '>
+                     <h1 className='md:w-[400px] mt-5 font-{Dennis Sans, sans-serif} lg:text-6xl text-3xl font-normal leading-[70px] -tracking-[-1.3px] '>
                         Designing Tools to Build Better Futures
                      </h1>
                   </div>
@@ -80,7 +85,7 @@ const Skill = () => {
                </div>
             </div>
             <div className='bg-white text-black text-center lg:h-[40vh] items-center flex justify-center flex-col '>
-               <div className='mt-5 font-{Dennis Sans, sans-serif} text-6xl font-normal leading-[70px] -tracking-[-1.3px] '>
+               <div className='mt-5 font-{Dennis Sans, sans-serif} text-6xl font-normal leading-[70px] -tracking-[1.3px] '>
                   HMW Statement
                </div>
                <div className=' mt-5 text-xl font-light -tracking-[0.4px] leading-8 lg:w-[800px]'>
@@ -94,10 +99,10 @@ const Skill = () => {
                   Chapter <br /> Research
                </div>
             </div>
-            <div className=' text-black text-center py-8 bg-white'>
-               <div className='font-{Dennis Sans, sans-serif} lg:text-6xl text-xl font-normal pb-10 capitalize'>
+            <div className='text-black py-8 bg-white'>
+               <h1 className=' text-center text-black font-{Dennis Sans, sans-serif} text-3xl font-semibold my-5 -tracking-[1px]'>
                   I conducted research in two phases
-               </div>
+               </h1>
                <div className='md:flex justify-around items-center gap-4 '>
                   <div className='lg:h-[50vh] h-[25vh] w-full bg-white hover:bg-slate-50  flex flex-col justify-center items-center text-center hover:shadow-2xl transition-colors duration-1000 ease-in-out cursor-pointer border-b-2 border-blue-700'>
                      <h1 className='font-{Dennis Sans, sans-serif} text-xl font-semibold'>Secondary Research </h1>
@@ -108,8 +113,8 @@ const Skill = () => {
                      <p className='text-blue-600'>User survey and user Interview</p>
                   </div>
                </div>
-               <div className='md:px-10  py-10'>
-                  <p className='text-center'>
+               <div className='lg:px-10 px-4 py-10'>
+                  <p className='lg:text-center'>
                      To understand user frustrations and requirements, I conducted interviews with individuals from various industries. The
                      goal was to gain insights into their needs to better design a user-friendly resume-building platform. Initially, we
                      assumed users struggled with technical issues like formatting and ATS compatibility. However, the research revealed
@@ -119,18 +124,19 @@ const Skill = () => {
                   </p>
                </div>
             </div>
-            <div className=' '>
-               <div className='border-b-2 border-[#ffffff4d] py-4 '>
-                  <div className='font-{Rmneue, sans-serif} lg:text-6xl text-2xl leading-[50px] px-8'>
-                     {" "}
+            <div className=''>
+               <div className='border-b-2 border-[#ffffff4d] lg:h-[50vh] flex lg:justify-center lg:items-center px-8'>
+                  <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw]'>
                      #01 <br />
                      Secondary Research
-                  </div>
+                  </h1>
                </div>
-               <div className='p-8'>
-                  <div className='flex flex-col justify-start'>
-                     <h1 className='font-{Dennis Sans, sans-serif} pt-4 lg:text-4xl text-2xl'>Competitor Analysis</h1>
-                     <p className='text-[#ffffff90] py-8 font-normal text-lg'>
+               <div>
+                  <div>
+                     <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                        Competitor Analysis
+                     </h1>
+                     <p className='px-8 mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif}'>
                         I conducted secondary research to gain deeper insights into existing products in the market, focusing on the key
                         features they offer and the challenges users face while using them. My market research began with four competitors:
                         Canva Resume Builder, Zety, Resume.io, and Novoresume. This analysis helped identify areas where my resume-building
@@ -139,175 +145,488 @@ const Skill = () => {
                         user needs.
                      </p>
                   </div>
-                  <div class='pb-8 cursor-pointer lg:flex hidden'>
-                     <table class='md:w-full border border-gray-300'>
-                        <thead>
-                           <tr class='bg-gray-100 text-center text-black'>
-                              <th class='border border-gray-300 py-6'>Feature</th>
-                              <th class='border border-gray-300 py-6'>Your Website</th>
-                              <th class='border border-gray-300 py-6'>Canva Resume Builder</th>
-                              <th class='border border-gray-300 py-6'>Zety</th>
-                              <th class='border border-gray-300 py-6'>Resume.io</th>
-                              <th class='border border-gray-300 py-6'>Novoresume</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr class='text-center'>
-                              <td class='border border-gray-300 px-4 py-4'>Curated Templates</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                           </tr>
-                           <tr class='text-center'>
-                              <td class='border border-gray-300 px-4 py-4'>Limited Customization</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-red-600'>No</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-red-600'>No</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-red-600'>No</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-red-600'>No</td>
-                           </tr>
-                           <tr class='text-center'>
-                              <td class='border border-gray-300 px-4 py-4'>ATS Compatibility</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                           </tr>
-                           <tr class='text-center'>
-                              <td class='border border-gray-300 px-4 py-4'>Subscription Models</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-blue-600'>Simple</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-blue-600'>Complex</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-blue-600'>Complex</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-blue-600'>Complex</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-blue-600'>Complex</td>
-                           </tr>
-                           <tr class='text-center'>
-                              <td class='border border-gray-300 px-4 py-4'>User-Friendly Design</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                           </tr>
-                           <tr class='text-center'>
-                              <td class='border border-gray-300 px-4 py-4'>Real-Time Preview</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                           </tr>
-                           <tr class='text-center'>
-                              <td class='border border-gray-300 px-4 py-4'>Keyword Suggestions</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-red-600'>No</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-red-600'>No</td>
-                              <td class='border border-gray-300 px-4 py-4 '>Yes</td>
-                              <td class='border border-gray-300 px-4 py-4 bg-red-600'>No</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div className='w-full  lg:hidden flex '>
-                     <Image src={I3} width={800} height={500} />
+                  <div className='bg-black'>
+                     <div className='grid md:grid-cols-2 gap-[1px]'>
+                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8'>
+                           <h1 className='py-4 md:px-8'>
+                              <SiCanva size={100} className='text-blue-700' />
+                           </h1>
+                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                              Canva offers a visually appealing platform with professionally designed templates, allowing users to create
+                              polished resumes effortlessly, even without prior design skills. Its extensive template library and
+                              user-friendly interface make the resume-building process straightforward and accessible. However, some users
+                              may find the subscription model complex, and the platform lacks real-time preview features. Additionally,
+                              customization options are somewhat limited, which might restrict users looking for more personalized resume
+                              designs.
+                           </p>
+                        </div>
+                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8 '>
+                           <h1 className='py-4 md:px-8'>
+                              <FaSquarespace size={100} className='text-yellow-500' />
+                           </h1>
+                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                              Zety offers a unique value proposition by combining pre-written content with keyword suggestions, helping
+                              users optimize their resumes for Applicant Tracking Systems (ATS) while tailoring them to specific job roles.
+                              Its features ensure ATS compatibility, provide helpful content suggestions, and guide users through a
+                              step-by-step resume creation process. However, the platform's complex subscription models and lack of a
+                              real-time preview feature may present challenges for some users.
+                           </p>
+                        </div>
+                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8'>
+                           <h1 className='py-4 md:px-8'>
+                              <GrResume size={100} className='text-green-500' />
+                           </h1>
+                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                              Resume.io focuses on ease of use, offering real-time previews and ATS optimization tools to help users quickly
+                              refine their resumes to meet job market standards. Its modern interface enhances the user experience, making
+                              resume creation straightforward and efficient. However, the platform's complex subscription models, limited
+                              customization options, and somewhat generic templates may limit its appeal for users seeking highly
+                              personalized resumes.
+                           </p>
+                        </div>
+                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8'>
+                           <h1 className='py-4 md:px-8'>
+                              <SiNovu size={100} className='text-orange-600' />
+                           </h1>
+                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                              Novoresume provides a streamlined, intuitive experience that simplifies resume creation while delivering sleek
+                              and professional results. Its user-friendly design and real-time preview feature make the process efficient
+                              and accessible, with a strong focus on modern aesthetics. However, the platform's complex subscription plans,
+                              lack of ATS keyword suggestions, and restrictions on premium features may pose challenges for users seeking
+                              more comprehensive functionality. designs.
+                           </p>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <div className='lg:flex justify-between items-end py-8 gap-8 px-8'>
-                  <div>
-                     <h1 className='font-{Dennis Sans, sans-serif} py-2 lg:text-4xl text-2xl text-[#ffff]'>User Reviews</h1>
-                     <p className='text-[#ffffff90] py-4 font-normal text-lg'>
+               <div className='lg:flex justify-between gap-4 py-8 md:px-8 px-2 min-h-[400px] border-b-2 border-[#ffffff4d]'>
+                  <div className=' flex flex-col justify-between'>
+                     <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                        User Reviews
+                     </h1>
+                     <p className='px-8 mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} w-full'>
                         User Reviews I looked for user reviews on Play Store for different competitor apps to get more insights on user pain
                         points.
                      </p>
                   </div>
-                  <div className='grid md:grid-cols-2 gap-4 justify-center items-center'>
-                     <div className='bg-white text-black p-8 rounded'>
-                        <h1 className='font-{Dennis Sans, sans-serif} lg:text-2xl text-lg font-medium p-2 text-blue-600'>
+                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-100'>
+                     <div>
+                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>01</h1>
+                     </div>
+                     <div>
+                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
                            Paid subscriptions are not worth
+                        </p>
+                        <p>
+                           The one thing I downloaded this app for is locked behind a paywall. Terrible. Something I am only going to use
+                           once and not something I am going to use often, why would I waste my money. So pointless.
+                        </p>
+                     </div>
+                  </div>
+                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
+                     <div>
+                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>02</h1>
+                     </div>
+                     <div>
+                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
+                           Lack of ATS Compatibility
+                        </p>
+                        <p>
+                           The templates on Canva are creative, but they aren’t optimized for ATS, which is essential for my job search. I
+                           spent hours designing my resume only to find out it wasn’t being seen by recruiters.
+                        </p>
+                     </div>
+                  </div>
+                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px]  opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
+                     <div>
+                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>03</h1>
+                     </div>
+                     <div>
+                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
+                           Overpriced for Basic Features
+                        </p>
+                        <p>
+                           Zety’s subscription is outrageously priced for what it offers. The templates are fine, but I shouldn’t have to
+                           pay just to download a resume. It’s misleading that the most basic features are behind a paywall.
+                        </p>
+                     </div>
+                  </div>
+                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
+                     <div>
+                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>04</h1>
+                     </div>
+                     <div>
+                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
+                           Customization Restrictions
+                        </p>
+                        <p>
+                           Novoresume’s templates are nice, but you can’t customize them much. As someone who wanted to adjust details for
+                           my profession, I found the lack of flexibility frustrating. For the price, I expected more room for
+                           personalization
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div className='mb-8'>
+                  <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                     DEFINING THE PROBLEM.
+                  </h1>
+                  <p className='px-8 mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} w-full'>
+                     In a competitive job market, job seekers face significant challenges in creating standout resumes due to rigid
+                     subscription models, complex formatting issues, and an overwhelming number of template choices in existing
+                     resume-building tools. These barriers hinder users from crafting ATS-optimized resumes that effectively showcase their
+                     skills and experiences. Our user research, which involved interviews with individuals from various industries, revealed
+                     a strong preference for simplicity, flexibility, and curated templates tailored to specific roles. Users desire a
+                     platform that streamlines the resume-building process, offering intuitive design, intelligent word suggestions, and
+                     customizable templates to create professional, polished resumes with ease.
+                  </p>
+               </div>
+            </div>
+            <div className='bg-[#141414] text-white'>
+               <div className=' lg:h-[50vh] flex lg:justify-center lg:items-center px-8 border-b-2 '>
+                  <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw]'>
+                     #02 <br /> Primary Research
+                  </h1>
+               </div>
+               <div className='lg:h-[30vh] flex flex-col justify-center border-b-2 px-8'>
+                  <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                     User Surveys and Interviews
+                  </h1>
+                  <p className='lg:px-8  mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8'>
+                     To understand the needs and pain points of users for our resume-building platform, I conducted primary research through
+                     user surveys. The survey aimed to gather insights into user experiences, challenges, and preferences when creating
+                     resumes. The data collected from the survey will be analyzed to identify user personas, pain points, and
+                     decision-making processes. This research will guide the development of features that address the most common issues
+                     users face, ensuring the platform aligns with their needs and expectations. needs.
+                  </p>
+               </div>
+               <div className='lg:h-[100vh] px-8 pt-10'>
+                  <div>
+                     <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                        _______ Target audience.
+                     </h1>
+                     <p className='lg:px-8 lg:mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8'>
+                        The target audience includes recent graduates, mid-level professionals, and career switchers looking to create
+                        ATS-compatible resumes. It also caters to freelancers, entrepreneurs, and HR professionals who need customizable
+                        templates for showcasing skills and experience. The platform aims to provide an easy, efficient way for users to
+                        craft professional and tailored resumes.
+                     </p>
+                     <div className='lg:px-8 lg:flex justify-between lg:py-10 gap-7 '>
+                        <h1 className='bg-green-600 text-white px-10 py-8 font-semibold leading-7 text-lg rounded-md mb-2 '>
+                           Recent graduates
                         </h1>
-                        <div className='flex p-2'>
-                           <FaStar size={20} className='text-yellow-500' />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <p className='pl-4'>08/06/2024</p>
-                        </div>
-                        <div>
-                           <p className='p-2'>
-                              The one thing I downloaded this app for is locked behind a paywall. Terrible. Something I am only going to use
-                              once and not something I am going to use often, why would I waste my money. So pointless.
+                        <h1 className='bg-green-600 text-white px-10 py-8 font-semibold leading-7 text-lg rounded-md mb-2 '>Mid-level</h1>
+                        <h1 className='bg-green-600 text-white px-10 py-8 font-semibold leading-7 text-lg rounded-md mb-2 '>
+                           professionals
+                        </h1>
+                        <h1 className='bg-green-600 text-white px-10 py-8 font-semibold leading-7 text-lg rounded-md mb-2 '>Freelancers</h1>
+                        <h1 className='bg-green-600 text-white px-10 py-8 font-semibold leading-7 text-lg rounded-md mb-2 '>
+                           HR Professionals
+                        </h1>
+                     </div>
+                  </div>
+                  <div className='flex justify-center items-center lg:pt-24 my-4'>
+                     <Image src={I3} width={500} height={500} className='  rounded-lg' />
+                  </div>
+               </div>
+            </div>
+            <div className='bg-white text-black'>
+               <div className='px-8 pt-16'>
+                  <h1 className='font-{Dennis Sans, sans-serif} md:px-8 md:text-4xl text-3xl font-semibold my-5 -tracking-[1px]'>
+                     _______ Pain Points
+                  </h1>
+               </div>
+               <div className='md:grid md:grid-cols-2 px-8 pb-16 gap-8'>
+                  <div className='bg-white text-black flex flex-col justify-center items-center'>
+                     <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
+                        01
+                     </h1>
+                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                        Users find it confusing and overwhelming to choose from a large number of resume templates.
+                     </p>
+                  </div>
+                  <div className='bg-white text-black flex flex-col justify-center items-center'>
+                     <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
+                        02
+                     </h1>
+                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                        Many existing tools are expensive, posing a barrier for job seekers, especially those who are unemployed or
+                        underemployed.
+                     </p>
+                  </div>
+                  <div className='bg-white text-black flex flex-col justify-center items-center'>
+                     <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
+                        03
+                     </h1>
+                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                        Users face difficulties with formatting, ATS compatibility, and saving/exporting resumes.
+                     </p>
+                  </div>
+                  <div className='bg-white text-black flex flex-col justify-center items-center'>
+                     <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
+                        04
+                     </h1>
+                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                        Limited customization options restrict users from tailoring their resumes to specific job applications and personal
+                        preferences.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div className='lg:h-[30vh] flex flex-col justify-center px-8'>
+                  <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                     User Personas
+                  </h1>
+                  <p className='lg:px-8  text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7'>
+                     I created two user personas based on the responses from our user interviews. Deriving these personas helped me gain a
+                     deeper understanding of our users and build empathy with their experiences. By thinking from the users' perspectives, I
+                     was able to make more informed and user-centric decisions, focusing on their specific needs and goals.
+                  </p>
+               </div>
+               <div class='bg-black text-white font-sans'>
+                  <div class='max-w-4xl mx-auto p-8'>
+                     <h1 class='text-3xl font-bold mb-6'>01</h1>
+                     <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
+                        <div class='bg-blue-600 p-4 rounded-lg'>
+                           <Image src={I2} width={500} height={500} className='rounded-lg' />
+                           <p>
+                              <strong>NAME:</strong> Nagendra B S
                            </p>
+                           <p>
+                              <strong>AGE:</strong> 24
+                           </p>
+                           <p>
+                              <strong>EDUCATION:</strong> BCA
+                           </p>
+                           <p>
+                              <strong>JOB:</strong> Recent Graduate
+                           </p>
+                           <p>
+                              <strong>LOCATION:</strong> Bangalore
+                           </p>
+                           <p>
+                              <strong>HOBBIES:</strong> Karate
+                           </p>
+                        </div>
+                        <div class='bg-blue-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Bio</h2>
+                           <p className='text-[#ffff] font-{Dennis Sans, sans-serif} font-normal text-lg leading-7'>
+                              Nagendra has just graduated and is excited to enter the marketing field. He is full of energy but finds the
+                              process of creating a resume daunting. He is looking for a tool that will streamline the process and make it
+                              less overwhelming.
+                           </p>
+                        </div>
+                        <div class='bg-blue-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Personality</h2>
+                           <ul class='list-disc pl-6 text-[#ffff] font-{Dennis Sans, sans-serif} font-normal text-lg leading-7'>
+                              <li>Hardworking</li>
+                              <li>Smart</li>
+                              <li>Expressive</li>
+                              <li>Thoughtful</li>
+                           </ul>
                         </div>
                      </div>
-                     <div className='bg-white text-black p-8 rounded'>
-                        <h1 className='font-{Dennis Sans, sans-serif} text-2xl font-medium p-2 text-blue-600'>Lack of ATS Compatibility</h1>
-                        <div className='flex p-2'>
-                           <FaStar size={20} className='text-yellow-500' />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <p className='pl-4'>08/06/2024</p>
+                     <div class='grid grid-cols-1 md:grid-cols-2 gap-4 mt-4'>
+                        <div class='bg-blue-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Pain Points</h2>
+                           <ul class='list-disc pl-6 text-[#ffff] font-{Dennis Sans, sans-serif} font-normal text-lg leading-7'>
+                              <li>Overwhelmed by too many resume template choices, making it hard to decide.</li>
+                              <li>Struggles with formatting resumes to make them professional and ATS-friendly.</li>
+                              <li>Unsure how to tailor his resume for specific marketing job roles.</li>
+                           </ul>
                         </div>
-                        <div>
-                           <p className='p-2'>
-                              The templates on Canva are creative, but they aren’t optimized for ATS, which is essential for my job search.
-                              I spent hours designing my resume only to find out it wasn’t being seen by recruiters. Really frustrating. I
-                              needed a tool that would provide more professional, ATS-friendly templates.
+                        <div class='bg-blue-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Goals</h2>
+                           <ul class='list-disc pl-6 text-[#ffff] font-{Dennis Sans, sans-serif} font-normal text-lg leading-7'>
+                              <li>To secure his first full-time job in marketing with a standout resume.</li>
+                              <li>To create a professional, visually appealing resume that aligns with industry standards.</li>
+                              <li>To save time and reduce stress by using a user-friendly resume-building tool.</li>
+                           </ul>
+                        </div>
+                        <div class='bg-blue-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Quote</h2>
+                           <p>"where words fail, Music speaks"</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class='bg-black text-white font-sans'>
+                  <div class='max-w-4xl mx-auto p-8'>
+                     <h1 class='text-3xl font-bold mb-6'>02</h1>
+                     <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
+                        <div class='bg-green-600 p-4 rounded-lg'>
+                           <Image src={I4} width={500} height={500} className='rounded-lg' />
+                           <p>
+                              <strong>NAME:</strong> Priya Ramesh
+                           </p>
+                           <p>
+                              <strong>AGE:</strong> 28
+                           </p>
+                           <p>
+                              <strong>EDUCATION:</strong> MBA
+                           </p>
+                           <p>
+                              <strong>JOB:</strong> Marketing Specialist
+                           </p>
+                           <p>
+                              <strong>LOCATION:</strong> Mumbai
+                           </p>
+                           <p>
+                              <strong>HOBBIES:</strong> Photography
                            </p>
                         </div>
-                     </div>{" "}
-                     <div className='bg-white text-black p-8 rounded'>
-                        <h1 className='font-{Dennis Sans, sans-serif} text-2xl font-medium p-2 text-blue-600'>
-                           Overpriced for Basic Features
-                        </h1>
-                        <div className='flex p-2'>
-                           <FaStar size={20} className='text-yellow-500' />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <p className='pl-4'>02/08/2024</p>
-                        </div>
-                        <div>
-                           <p className='p-2'>
-                              Zety’s subscription is outrageously priced for what it offers. The templates are fine, but I shouldn’t have to
-                              pay just to download a resume. It’s very misleading that the most basic features are locked behind a paywall.
-                              If you want a one-time resume builder, don’t bother with this—it is just not worth the cost.
+                        <div class='bg-green-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Bio</h2>
+                           <p class='text-white font-sans font-normal text-lg leading-7'>
+                              Priya is a passionate marketing specialist with over five years of experience. She loves connecting with
+                              people through creative campaigns but finds it challenging to update her resume to reflect her evolving
+                              skills.
                            </p>
                         </div>
-                     </div>{" "}
-                     <div className='bg-white text-black p-8 rounded'>
-                        <h1 className='font-{Dennis Sans, sans-serif} text-2xl font-medium p-2 text-blue-600'>
-                           Customization Restrictions
-                        </h1>
-                        <div className='flex p-2'>
-                           <FaStar size={20} className='text-yellow-500' />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <FaStar size={20} />
-                           <p className='pl-4'>08/08/2024</p>
+                        <div class='bg-green-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Personality</h2>
+                           <ul class='list-disc pl-6 text-white font-sans font-normal text-lg leading-7'>
+                              <li>Creative</li>
+                              <li>Dynamic</li>
+                              <li>Collaborative</li>
+                              <li>Detail-oriented</li>
+                           </ul>
                         </div>
-                        <div>
-                           <p className='p-2'>
-                              Novoresume’s templates are nice, but you can’t customize them much. As someone who wanted to adjust some
-                              details to fit my profession, I found the lack of flexibility really annoying. For the price they charge, I
-                              expected more room for personalization and fewer limitations. Definitely not the best tool for anyone seeking
-                              unique resumes.
-                           </p>
+                     </div>
+                     <div class='grid grid-cols-1 md:grid-cols-2 gap-4 mt-4'>
+                        <div class='bg-green-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Pain Points</h2>
+                           <ul class='list-disc pl-6 text-white font-sans font-normal text-lg leading-7'>
+                              <li>Struggles with showcasing her diverse marketing experience succinctly.</li>
+                              <li>Finds it hard to keep up with the latest resume trends and tools.</li>
+                              <li>Wants to make her resume visually appealing while remaining professional.</li>
+                           </ul>
+                        </div>
+                        <div class='bg-green-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Goals</h2>
+                           <ul class='list-disc pl-6 text-white font-sans font-normal text-lg leading-7'>
+                              <li>To update her resume to reflect her skills and accomplishments accurately.</li>
+                              <li>To stand out in the competitive marketing job market.</li>
+                              <li>To use an intuitive tool that simplifies the resume-building process.</li>
+                           </ul>
+                        </div>
+                        <div class='bg-green-600 p-4 rounded-lg'>
+                           <h2 class='text-xl font-bold mb-2'>Quote</h2>
+                           <p>"Creativity is intelligence having fun."</p>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
+            <div className='bg-white text-black'>
+               <div className='lg:px-8 px-2 pt-16 pb-16'>
+                  <h1 className='font-{Dennis Sans, sans-serif} md:px-8 md:text-4xl text-3xl font-semibold my-5 -tracking-[1px]'>
+                     _______ User Journey Map
+                  </h1>
+                  <p className='lg:px-8  font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7'>
+                     Mapping the customer journey was highly insightful. It deepened my empathy for users and helped clearly define their
+                     pain points.
+                  </p>
+                  <div class='bg-black text-white p-6 rounded-lg shadow-lg mb-8 mt-8'>
+                     <h2 class='text-2xl font-bold mb-4'>User Journey Map</h2>
+                     <p class='text-lg font-semibold'>Persona: Nagendra B S</p>
+                     <p class='mb-6'>Goal: To secure her first full-time job in marketing with a standout resume.</p>
+                     <div class='grid md:grid-cols-4 gap-6'>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Actions</h3>
+                           <p>Discover user-friendly resume builders through social media ads, search engines, and recommendations.</p>
+                           <p class='mt-4'>Explore website landing pages, testimonials, and feature overviews.</p>
+                           <p class='mt-4'>Sign up and start creating a resume by choosing from a variety of templates.</p>
+                           <p class='mt-4'>Customize and download the resume using export options and feedback forms.</p>
+                        </div>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Task List</h3>
+                           <p>Overcome being overwhelmed by numerous options and credibility issues.</p>
+                           <p class='mt-4'>Evaluate ease of use and effectiveness of templates.</p>
+                           <p class='mt-4'>Select the most suitable resume template without decision fatigue.</p>
+                           <p class='mt-4'>Ensure the resume is ATS-compliant and correctly formatted.</p>
+                        </div>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Thoughts</h3>
+                           <p>What makes this platform credible?</p>
+                           <p class='mt-4'>Are the templates effective for real-world jobs?</p>
+                           <p class='mt-4'>Which template works best for my needs?</p>
+                           <p class='mt-4'>Is my resume compliant and professional?</p>
+                        </div>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Improvement Opportunities</h3>
+                           <p>Build trust with user reviews and testimonials.</p>
+                           <p class='mt-4'>Provide quick previews and detailed examples.</p>
+                           <p class='mt-4'>Offer recommendations based on industry.</p>
+                           <p class='mt-4'>Ensure clear export options with ATS compliance.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class='bg-black text-white p-6 rounded-lg shadow-lg'>
+                     <h2 class='text-2xl font-bold mb-4'>User Journey Map</h2>
+                     <p class='text-lg font-semibold'>Persona: Priya</p>
+                     <p class='mb-6'>Goal: To create a professional resume for a career change in software development.</p>
+                     <div class='grid md:grid-cols-4 gap-6'>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Actions</h3>
+                           <p>Research resume-building platforms through online forums, blogs, and industry-specific resources.</p>
+                           <p class='mt-4'>Compare different platforms based on features, pricing, and user reviews.</p>
+                           <p class='mt-4'>
+                              Sign up for a platform and begin crafting a resume using templates geared towards software development.
+                           </p>
+                           <p class='mt-4'>
+                              Tailor the resume to highlight transferable skills and download the final version for job applications.
+                           </p>
+                        </div>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Task List</h3>
+                           <p>Identify the best platform that meets her needs for a career transition.</p>
+                           <p class='mt-4'>Assess the relevance of templates for the software development industry.</p>
+                           <p class='mt-4'>Choose a template that effectively showcases her skills and experience.</p>
+                           <p class='mt-4'>Ensure the resume is optimized for ATS (Applicant Tracking Systems).</p>
+                        </div>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Thoughts</h3>
+                           <p>How can I make my non-technical experience appealing to tech recruiters?</p>
+                           <p class='mt-4'>Are there any templates specifically designed for career changers?</p>
+                           <p class='mt-4'>Which skills should I emphasize to make my resume stand out?</p>
+                           <p class='mt-4'>Is this platform reliable and easy to use?</p>
+                        </div>
+                        <div>
+                           <h3 class='font-bold text-lg mb-2'>Improvement Opportunities</h3>
+                           <p>Provide industry-specific templates and examples for career changers.</p>
+                           <p class='mt-4'>Offer guidance on highlighting transferable skills effectively.</p>
+                           <p class='mt-4'>Include a feature for peer or expert reviews of resumes.</p>
+                           <p class='mt-4'>Ensure the platform is user-friendly and includes tips for ATS optimization.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div className='pt-16'>
+               <div>
+                  <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw] text-center'>
+                     IDEATION
+                  </h1>
+                  <p className='px-8 mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} text-center'>
+                     Creating solutions for the problems
+                  </p>
+               </div>
+               <div>
+                  <p className='lg:px-8  mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8 text-center'>
+                     Mapping the customer journey was very insightful. It helped me empathize with the users and define their pain points.
+                     Gaining transparency into user thoughts and actions while looking for a roommate provided an opportunity to understand
+                     user behavior better. After conducting user research and creating personas and a customer journey map, I identified
+                     major user pain points and opportunities for improvement. Based on these pain points, I developed several potential
+                     solutions. After careful consideration and using the idea sorter method, I decided to proceed with the following
+                     solutions.
+                  </p>
+               </div>
+            </div>
          </ContentWrapper>
          <style jsx>{`
-            /* Animation for location button */
+            /* Animation for location h1 */
             @keyframes slideUp {
                0% {
                   transform: translateY(20px);
