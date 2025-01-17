@@ -168,7 +168,7 @@ const Skill = () => {
                               Zety offers a unique value proposition by combining pre-written content with keyword suggestions, helping
                               users optimize their resumes for Applicant Tracking Systems (ATS) while tailoring them to specific job roles.
                               Its features ensure ATS compatibility, provide helpful content suggestions, and guide users through a
-                              step-by-step resume creation process. However, the platform's complex subscription models and lack of a
+                              step-by-step resume creation process. However, the platform&aposs complex subscription models and lack of a
                               real-time preview feature may present challenges for some users.
                            </p>
                         </div>
@@ -179,8 +179,8 @@ const Skill = () => {
                            <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
                               Resume.io focuses on ease of use, offering real-time previews and ATS optimization tools to help users quickly
                               refine their resumes to meet job market standards. Its modern interface enhances the user experience, making
-                              resume creation straightforward and efficient. However, the platform's complex subscription models, limited
-                              customization options, and somewhat generic templates may limit its appeal for users seeking highly
+                              resume creation straightforward and efficient. However, the platform&aposs complex subscription models,
+                              limited customization options, and somewhat generic templates may limit its appeal for users seeking highly
                               personalized resumes.
                            </p>
                         </div>
@@ -191,9 +191,9 @@ const Skill = () => {
                            <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
                               Novoresume provides a streamlined, intuitive experience that simplifies resume creation while delivering sleek
                               and professional results. Its user-friendly design and real-time preview feature make the process efficient
-                              and accessible, with a strong focus on modern aesthetics. However, the platform's complex subscription plans,
-                              lack of ATS keyword suggestions, and restrictions on premium features may pose challenges for users seeking
-                              more comprehensive functionality. designs.
+                              and accessible, with a strong focus on modern aesthetics. However, the platform&aposs complex subscription
+                              plans, lack of ATS keyword suggestions, and restrictions on premium features may pose challenges for users
+                              seeking more comprehensive functionality. designs.
                            </p>
                         </div>
                      </div>
@@ -380,7 +380,7 @@ const Skill = () => {
                   </h1>
                   <p className='lg:px-8  text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7'>
                      I created two user personas based on the responses from our user interviews. Deriving these personas helped me gain a
-                     deeper understanding of our users and build empathy with their experiences. By thinking from the users' perspectives, I
+                     deeper understanding of our users and build empathy with their experiences. By thinking from the users perspectives, I
                      was able to make more informed and user-centric decisions, focusing on their specific needs and goals.
                   </p>
                </div>
@@ -446,7 +446,7 @@ const Skill = () => {
                         </div>
                         <div class='bg-blue-600 p-4 rounded-lg'>
                            <h2 class='text-xl font-bold mb-2'>Quote</h2>
-                           <p>"where words fail, Music speaks"</p>
+                           <p>where words fail, Music speaks</p>
                         </div>
                      </div>
                   </div>
@@ -513,7 +513,7 @@ const Skill = () => {
                         </div>
                         <div class='bg-green-600 p-4 rounded-lg'>
                            <h2 class='text-xl font-bold mb-2'>Quote</h2>
-                           <p>"Creativity is intelligence having fun."</p>
+                           <p>Creativity is intelligence having fun.</p>
                         </div>
                      </div>
                   </div>
