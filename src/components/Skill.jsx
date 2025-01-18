@@ -149,7 +149,7 @@ const Skill = () => {
                   intuitive platform that caters to diverse user needs and skill levels?
                </div>
             </div>
-            <div className='h-[100vh] flex  justify-center items-center gap-x-4 animate-slide-up'>
+            <div className='h-[100vh] flex  justify-center items-center gap-x-4 animate-slide-up '>
                <div className='font-{Dennis Sans, sans-serif} text-6xl font-semibold'>01 / </div>
                <div className='font-{Dennis Sans, sans-serif} lg:text-6xl font-normal'>
                   Chapter <br /> Research
@@ -181,7 +181,7 @@ const Skill = () => {
                </div>
             </div>
             <div className=''>
-               <div className='border-b-2 border-[#ffffff4d] lg:h-[50vh] flex lg:justify-center lg:items-center px-8'>
+               <div className='border-b-2 border-[#ffffff4d] lg:h-[50vh] flex lg:justify-center lg:items-center px-8 py-4 lg:py-0'>
                   <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw]'>
                      #01 <br />
                      Secondary Research
@@ -255,7 +255,7 @@ const Skill = () => {
                      </div>
                   </div>
                </div>
-               <div className='lg:flex justify-between gap-4 py-8 md:px-8 px-2 min-h-[400px] border-b-2 border-[#ffffff4d]'>
+               <div className=' lg:flex justify-center items-center gap-4 py-8 lg:px-8 px-2 min-h-[400px] border-b-2 border-[#ffffff4d]'>
                   <div className=' flex flex-col justify-between'>
                      <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
                         User Reviews
@@ -265,61 +265,63 @@ const Skill = () => {
                         points.
                      </p>
                   </div>
-                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-100'>
-                     <div>
-                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>01</h1>
+                  <div className='flex flex-col justify-center items-center'>
+                     <div className='flex flex-col justify-between  bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-100'>
+                        <div>
+                           <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>01</h1>
+                        </div>
+                        <div>
+                           <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
+                              Paid subscriptions are not worth
+                           </p>
+                           <p>
+                              The one thing I downloaded this app for is locked behind a paywall. Terrible. Something I am only going to use
+                              once and not something I am going to use often, why would I waste my money. So pointless.
+                           </p>
+                        </div>
                      </div>
-                     <div>
-                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
-                           Paid subscriptions are not worth
-                        </p>
-                        <p>
-                           The one thing I downloaded this app for is locked behind a paywall. Terrible. Something I am only going to use
-                           once and not something I am going to use often, why would I waste my money. So pointless.
-                        </p>
+                     <div className='flex flex-col justify-between  bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
+                        <div>
+                           <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>02</h1>
+                        </div>
+                        <div>
+                           <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
+                              Lack of ATS Compatibility
+                           </p>
+                           <p>
+                              The templates on Canva are creative, but they aren’t optimized for ATS, which is essential for my job search.
+                              I spent hours designing my resume only to find out it wasn’t being seen by recruiters.
+                           </p>
+                        </div>
                      </div>
-                  </div>
-                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
-                     <div>
-                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>02</h1>
+                     <div className='flex flex-col justify-between  bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px]  opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
+                        <div>
+                           <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>03</h1>
+                        </div>
+                        <div>
+                           <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
+                              Overpriced for Basic Features
+                           </p>
+                           <p>
+                              Zety’s subscription is outrageously priced for what it offers. The templates are fine, but I shouldn’t have to
+                              pay just to download a resume. It’s misleading that the most basic features are behind a paywall.
+                           </p>
+                        </div>
                      </div>
-                     <div>
-                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
-                           Lack of ATS Compatibility
-                        </p>
-                        <p>
-                           The templates on Canva are creative, but they aren’t optimized for ATS, which is essential for my job search. I
-                           spent hours designing my resume only to find out it wasn’t being seen by recruiters.
-                        </p>
-                     </div>
-                  </div>
-                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px]  opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
-                     <div>
-                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>03</h1>
-                     </div>
-                     <div>
-                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
-                           Overpriced for Basic Features
-                        </p>
-                        <p>
-                           Zety’s subscription is outrageously priced for what it offers. The templates are fine, but I shouldn’t have to
-                           pay just to download a resume. It’s misleading that the most basic features are behind a paywall.
-                        </p>
-                     </div>
-                  </div>
-                  <div className='flex flex-col justify-between bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
-                     <div>
-                        <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>04</h1>
-                     </div>
-                     <div>
-                        <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
-                           Customization Restrictions
-                        </p>
-                        <p>
-                           Novoresume’s templates are nice, but you can’t customize them much. As someone who wanted to adjust details for
-                           my profession, I found the lack of flexibility frustrating. For the price, I expected more room for
-                           personalization
-                        </p>
+                     <div className='flex flex-col justify-between  bg-white text-black lg:px-4 px-[20px] py-2 mb-2 lg:w-[500px] w-[300px] opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer'>
+                        <div>
+                           <h1 className='font-{Dennis Sans, sans-serif} text-right text-2xl font-semibold my-2 -tracking-[1px]'>04</h1>
+                        </div>
+                        <div>
+                           <p className='font-{Dennis Sans, sans-serif} text-2xl font-semibold my-2 -tracking-[1px]'>
+                              Customization Restrictions
+                           </p>
+                           <p>
+                              Novoresume’s templates are nice, but you can’t customize them much. As someone who wanted to adjust details
+                              for my profession, I found the lack of flexibility frustrating. For the price, I expected more room for
+                              personalization
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -339,7 +341,7 @@ const Skill = () => {
                </div>
             </div>
             <div className='bg-[#141414] text-white'>
-               <div className=' lg:h-[50vh] flex lg:justify-center lg:items-center px-8 border-b-2 '>
+               <div className=' lg:h-[50vh] flex lg:justify-center lg:items-center px-8 border-b-2 py-4 lg:py-0 '>
                   <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw]'>
                      #02 <br /> Primary Research
                   </h1>
@@ -381,8 +383,8 @@ const Skill = () => {
                         </h1>
                      </div>
                   </div>
-                  <div className='md:w-1/2 w-full hidden lg:flex justify-center items-center shadow-2xl shadow-black'>
-                     <Image src={I3} width={200} height={200} className='object-cover w-[80%] h-[80%] rounded-lg' alt='Target' />
+                  <div className='md:w-1/2  hidden lg:flex justify-center items-center shadow-2xl shadow-black'>
+                     <Image src={I3} width={800} height={800} className='object-cover  rounded-lg' alt='Target' />
                   </div>
                </div>
             </div>
@@ -392,7 +394,7 @@ const Skill = () => {
                      _______ Pain Points
                   </h1>
                </div>
-               <div className='md:grid lg::grid-cols-2 px-8 pb-16 gap-8'>
+               <div className='md:grid lg:grid-cols-2 px-8 pb-16 gap-8'>
                   <div className='bg-white text-black flex flex-col justify-center items-center'>
                      <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
                         01
