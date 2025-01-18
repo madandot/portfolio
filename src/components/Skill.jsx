@@ -1,20 +1,76 @@
 "use client";
 import React from "react";
-
+import { useState, useEffect } from "react";
 import ContentWrapper from "./ContentWrapper";
 import { IoIosArrowRoundDown } from "react-icons/io";
 import { SiCanva } from "react-icons/si";
 import { SiNovu } from "react-icons/si";
 import { GrResume } from "react-icons/gr";
 import { FaSquarespace } from "react-icons/fa";
-
+import Video from "next-video";
 import Image from "next/image";
 import I1 from "../../public/images/Home02.jpeg";
 import I2 from "../../public/images/men.jpg";
 import I3 from "../../public/images/gettyimages.jpg";
 import I4 from "../../public/images/women.JPG";
+import I5 from "../../public/images/Subscription page.PNG";
+import I6 from "../../public/images/Formate.PNG";
+import I7 from "../../public/images/template.PNG";
+import I8 from "../../public/images/ATS.PNG";
 
 const Skill = () => {
+   const [currentSlide, setCurrentSlide] = useState(0);
+
+   const slides = [
+      {
+         id: 1,
+         title: "Pain Point",
+         content:
+            "Job seekers face challenges with rigid and expensive subscription models in resume-building platforms, which often lock them into long-term commitments and limit their ability to make necessary updates without incurring high costs.",
+         solution:
+            "Offer flexible and affordable subscription plans that cater to various user needs. The Single Resume plan allows users to create a professional resume with five free updates for ₹300, ensuring they can make initial adjustments without extra charges. The ATS Resume plan, priced at ₹500, provides a more customized resume tailored to job-specific details, also including five free updates. For ongoing needs, a Resume Update option at ₹150 per update after the initial five free ones enables users to keep their resumes current without a long-term financial commitment. These plans provide a balanced approach to affordability and functionality, meeting diverse user preferences.",
+         image: I5,
+      },
+      {
+         id: 2,
+         title: "Pain Point",
+         content:
+            "Users find formatting tools overly complex, leading to frustration and inconsistent resumes. They need a simple, intuitive solution for professional-looking results.",
+         solution:
+            "Recognizing the frustrations users face with complex and unintuitive formatting tools, I focused on simplifying the resume creation process without compromising professional quality. By offering a curated selection of font styles (Inter, Aptos, and Calibri) and adjustable font sizes (10–14), I aimed to provide users with the flexibility to tailor their resumes while maintaining consistency and readability. Additionally, I implemented a real-time preview feature that allows users to instantly view how their formatting choices impact their resume layout. To further support users, I introduced a comprehensive guide and access to expert consultations via Zoom, ensuring they receive personalized assistance when needed. This approach has successfully reduced decision fatigue, enhanced the user experience, and empowered individuals to create polished, professional resumes with ease.",
+         image: I6,
+      },
+      {
+         id: 3,
+         title: "Pain Point",
+         content: "Users find it confusing and overwhelming to choose from a large number of resume templates.",
+         solution:
+            "To address the overwhelming template choices, I limited the selection to a curated set of templates, categorized by industry, career level, and job type. I implemented an interactive guide that offers personalized template recommendations based on user input. Users can also preview templates with sample content and schedule Zoom consultations with content experts for personalized assistance, ensuring they choose the best option for their needs. This approach simplifies the process and improves user confidence.",
+         image: I7,
+      },
+      {
+         id: 4,
+         title: "Pain Point",
+         content:
+            "Users have difficulty optimizing their resumes for Applicant Tracking Systems (ATS), which is critical for passing automated screenings and reaching human reviewers.",
+         solution:
+            "To address the ATS optimization pain point, provide users with ATS-friendly resume templates that are simple and formatted for easy scanning by ATS. Allow users to paste job descriptions to receive keyword suggestions and ensure their resumes align with the job requirements. Include a real-time ATS compatibility checker that provides instant feedback on keyword usage and formatting, along with an ATS readability score to show how likely the resume is to pass ATS screenings. Additionally, offer a step-by-step guide and Zoom consultations with ATS experts to further assist users in optimizing their resumes. This solution will streamline the process and increase the chances of resumes reaching human reviewers.",
+         image: I8,
+      },
+   ];
+
+   const handleNextSlide = () => {
+      if (currentSlide < slides.length - 1) {
+         setCurrentSlide(currentSlide + 1);
+      }
+   };
+
+   const handlePrevSlide = () => {
+      if (currentSlide > 0) {
+         setCurrentSlide(currentSlide - 1);
+      }
+   };
+
    return (
       <>
          <ContentWrapper>
@@ -147,7 +203,7 @@ const Skill = () => {
                   </div>
                   <div className='bg-black'>
                      <div className='grid md:grid-cols-2 gap-[1px]'>
-                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8'>
+                        <div className='bg-[#141414] text-white flex flex-col justify-center items-start py-8 px-8'>
                            <h1 className='py-4 md:px-8'>
                               <SiCanva size={100} className='text-blue-700' />
                            </h1>
@@ -160,7 +216,7 @@ const Skill = () => {
                               designs.
                            </p>
                         </div>
-                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8 '>
+                        <div className='bg-[#141414] text-white flex flex-col justify-center items-start py-8 px-8 '>
                            <h1 className='py-4 md:px-8'>
                               <FaSquarespace size={100} className='text-yellow-500' />
                            </h1>
@@ -172,7 +228,7 @@ const Skill = () => {
                               real-time preview feature may present challenges for some users.
                            </p>
                         </div>
-                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8'>
+                        <div className='bg-[#141414] text-white flex flex-col justify-center items-start py-8 px-8'>
                            <h1 className='py-4 md:px-8'>
                               <GrResume size={100} className='text-green-500' />
                            </h1>
@@ -184,7 +240,7 @@ const Skill = () => {
                               personalized resumes.
                            </p>
                         </div>
-                        <div className='bg-white text-black flex flex-col justify-center items-start py-8 px-8'>
+                        <div className='bg-[#141414] text-white flex flex-col justify-center items-start py-8 px-8'>
                            <h1 className='py-4 md:px-8'>
                               <SiNovu size={100} className='text-orange-600' />
                            </h1>
@@ -300,8 +356,8 @@ const Skill = () => {
                      users face, ensuring the platform aligns with their needs and expectations. needs.
                   </p>
                </div>
-               <div className='lg:h-[100vh] px-8 pt-10'>
-                  <div>
+               <div className='lg:h-[100vh] px-8 py-16 md:flex justify-center items-center '>
+                  <div className='md:w-1/2'>
                      <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
                         _______ Target audience.
                      </h1>
@@ -311,7 +367,7 @@ const Skill = () => {
                         templates for showcasing skills and experience. The platform aims to provide an easy, efficient way for users to
                         craft professional and tailored resumes.
                      </p>
-                     <div className='lg:px-8 lg:flex justify-between lg:py-10 gap-7 '>
+                     <div className='lg:px-8 lg:flex flex-col justify-between lg:py-10 gap-7 '>
                         <h1 className='bg-green-600 text-white px-10 py-8 font-semibold leading-7 text-lg rounded-md mb-2 '>
                            Recent graduates
                         </h1>
@@ -325,8 +381,8 @@ const Skill = () => {
                         </h1>
                      </div>
                   </div>
-                  <div className='flex justify-center items-center lg:pt-24 my-4'>
-                     <Image src={I3} width={500} height={500} className='  rounded-lg' />
+                  <div className='md:w-1/2 w-full hidden lg:flex justify-center items-center shadow-2xl shadow-black'>
+                     <Image src={I3} width={200} height={200} className='object-cover w-[80%] h-[80%] rounded-lg' alt='Target' />
                   </div>
                </div>
             </div>
@@ -336,13 +392,14 @@ const Skill = () => {
                      _______ Pain Points
                   </h1>
                </div>
-               <div className='md:grid md:grid-cols-2 px-8 pb-16 gap-8'>
+               <div className='md:grid lg::grid-cols-2 px-8 pb-16 gap-8'>
                   <div className='bg-white text-black flex flex-col justify-center items-center'>
                      <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
                         01
                      </h1>
                      <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
-                        Users find it confusing and overwhelming to choose from a large number of resume templates.
+                        Job seekers face challenges with rigid and expensive subscription models in resume-building platforms, which often
+                        lock them into long-term commitments and limit their ability to make necessary updates without incurring high costs.
                      </p>
                   </div>
                   <div className='bg-white text-black flex flex-col justify-center items-center'>
@@ -350,8 +407,8 @@ const Skill = () => {
                         02
                      </h1>
                      <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
-                        Many existing tools are expensive, posing a barrier for job seekers, especially those who are unemployed or
-                        underemployed.
+                        Users find formatting tools overly complex, leading to frustration and inconsistent resumes. They need a simple,
+                        intuitive solution for professional-looking results.
                      </p>
                   </div>
                   <div className='bg-white text-black flex flex-col justify-center items-center'>
@@ -359,7 +416,7 @@ const Skill = () => {
                         03
                      </h1>
                      <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
-                        Users face difficulties with formatting, ATS compatibility, and saving/exporting resumes.
+                        Users find it confusing and overwhelming to choose from a large number of resume templates.
                      </p>
                   </div>
                   <div className='bg-white text-black flex flex-col justify-center items-center'>
@@ -367,8 +424,8 @@ const Skill = () => {
                         04
                      </h1>
                      <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
-                        Limited customization options restrict users from tailoring their resumes to specific job applications and personal
-                        preferences.
+                        Users have difficulty optimizing their resumes for Applicant Tracking Systems (ATS), which is critical for passing
+                        automated screenings and reaching human reviewers.
                      </p>
                   </div>
                </div>
@@ -519,7 +576,7 @@ const Skill = () => {
                   </div>
                </div>
             </div>
-            <div className='bg-white text-black'>
+            <div className='bg-[#141414] text-white'>
                <div className='lg:px-8 px-2 pt-16 pb-16'>
                   <h1 className='font-{Dennis Sans, sans-serif} md:px-8 md:text-4xl text-3xl font-semibold my-5 -tracking-[1px]'>
                      _______ User Journey Map
@@ -534,28 +591,28 @@ const Skill = () => {
                      <p class='mb-6'>Goal: To secure her first full-time job in marketing with a standout resume.</p>
                      <div class='grid md:grid-cols-4 gap-6'>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Actions</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Actions</h3>
                            <p>Discover user-friendly resume builders through social media ads, search engines, and recommendations.</p>
                            <p class='mt-4'>Explore website landing pages, testimonials, and feature overviews.</p>
                            <p class='mt-4'>Sign up and start creating a resume by choosing from a variety of templates.</p>
                            <p class='mt-4'>Customize and download the resume using export options and feedback forms.</p>
                         </div>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Task List</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Task List</h3>
                            <p>Overcome being overwhelmed by numerous options and credibility issues.</p>
                            <p class='mt-4'>Evaluate ease of use and effectiveness of templates.</p>
                            <p class='mt-4'>Select the most suitable resume template without decision fatigue.</p>
                            <p class='mt-4'>Ensure the resume is ATS-compliant and correctly formatted.</p>
                         </div>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Thoughts</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Thoughts</h3>
                            <p>What makes this platform credible?</p>
                            <p class='mt-4'>Are the templates effective for real-world jobs?</p>
                            <p class='mt-4'>Which template works best for my needs?</p>
                            <p class='mt-4'>Is my resume compliant and professional?</p>
                         </div>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Improvement Opportunities</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Improvement Opportunities</h3>
                            <p>Build trust with user reviews and testimonials.</p>
                            <p class='mt-4'>Provide quick previews and detailed examples.</p>
                            <p class='mt-4'>Offer recommendations based on industry.</p>
@@ -565,11 +622,11 @@ const Skill = () => {
                   </div>
                   <div class='bg-black text-white p-6 rounded-lg shadow-lg'>
                      <h2 class='text-2xl font-bold mb-4'>User Journey Map</h2>
-                     <p class='text-lg font-semibold'>Persona: Priya</p>
+                     <p class='text-lg font-semibold'>Persona: Priya Ramesh</p>
                      <p class='mb-6'>Goal: To create a professional resume for a career change in software development.</p>
                      <div class='grid md:grid-cols-4 gap-6'>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Actions</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Actions</h3>
                            <p>Research resume-building platforms through online forums, blogs, and industry-specific resources.</p>
                            <p class='mt-4'>Compare different platforms based on features, pricing, and user reviews.</p>
                            <p class='mt-4'>
@@ -580,21 +637,21 @@ const Skill = () => {
                            </p>
                         </div>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Task List</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Task List</h3>
                            <p>Identify the best platform that meets her needs for a career transition.</p>
                            <p class='mt-4'>Assess the relevance of templates for the software development industry.</p>
                            <p class='mt-4'>Choose a template that effectively showcases her skills and experience.</p>
                            <p class='mt-4'>Ensure the resume is optimized for ATS (Applicant Tracking Systems).</p>
                         </div>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Thoughts</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Thoughts</h3>
                            <p>How can I make my non-technical experience appealing to tech recruiters?</p>
                            <p class='mt-4'>Are there any templates specifically designed for career changers?</p>
                            <p class='mt-4'>Which skills should I emphasize to make my resume stand out?</p>
                            <p class='mt-4'>Is this platform reliable and easy to use?</p>
                         </div>
                         <div>
-                           <h3 class='font-bold text-lg mb-2'>Improvement Opportunities</h3>
+                           <h3 class='font-bold text-lg mb-2 border-b-4 border-green-600 w-fit'>Improvement Opportunities</h3>
                            <p>Provide industry-specific templates and examples for career changers.</p>
                            <p class='mt-4'>Offer guidance on highlighting transferable skills effectively.</p>
                            <p class='mt-4'>Include a feature for peer or expert reviews of resumes.</p>
@@ -623,6 +680,67 @@ const Skill = () => {
                      solutions.
                   </p>
                </div>
+               <div className='relative h-screen  overflow-hidden '>
+                  {/* Slide Content */}
+                  <div className='relative h-full  lg:flex lg:flex-col justify-center items-center'>
+                     {slides.map((slide, index) => (
+                        <div
+                           key={slide.id}
+                           className={`absolute inset-0 transition-transform duration-[2000ms] ease-out
+                     ${currentSlide === index ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}
+                     lg:flex flex-col md:flex-row justify-center items-center bg-white text-black p-4`}
+                        >
+                           <div className='lg:w-1/2 p-4'>
+                              <h1 className='font-{Dennis Sans, sans-serif}  md:text-6xl text-xl font-bold my-5 text-blue-700  '>
+                                 {slide.id}
+                              </h1>
+                              <h1 className='font-{Dennis Sans, sans-serif}  md:text-4xl text-2xl font-semibold my-5 tracking-tight capitalize'>
+                                 {slide.title}
+                              </h1>
+                              <p className='font-{Dennis Sans, sans-serif}  font-light md:text-lg text-base leading-7'>{slide.content}</p>
+                              <h2 className='font-{Dennis Sans, sans-serif}  md:text-4xl text-2xl font-semibold my-5 tracking-tight capitalize'>
+                                 Solution
+                              </h2>
+                              <p className='font-{Dennis Sans, sans-serif}  font-light md:text-lg text-base leading-7'>{slide.solution}</p>
+                           </div>
+                           <div className='lg:w-1/2 w-full flex justify-center items-center shadow-2xl shadow-black'>
+                              <Image
+                                 src={slide.image}
+                                 width={960}
+                                 height={540}
+                                 className='object-cover w-full h-full rounded-lg'
+                                 alt={`Slide ${slide.id}`}
+                              />
+                           </div>
+                        </div>
+                     ))}
+                  </div>
+
+                  {/* Up and Down Arrows */}
+                  <div className='absolute lg:top-[50%] top-20 right-0 flex lg:flex-col gap-4 justify-between items-center px-4'>
+                     {/* Up Arrow */}
+                     <button onClick={handlePrevSlide} className='text-white bg-black p-4 rounded-full shadow-lg '>
+                        &#8592;
+                     </button>
+
+                     {/* Down Arrow */}
+                     <button onClick={handleNextSlide} className='text-white bg-black p-4 rounded-full shadow-lg '>
+                        &#8594;
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <div>
+               <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum distinctio quidem obcaecati ratione omnis quos
+                  explicabo nihil modi impedit cupiditate, cum repellendus rem tempora labore dolor laborum fugiat molestiae. Corrupti
+                  commodi repudiandae animi error cumque ipsum fuga aliquid, asperiores, omnis rerum, quidem amet. Consectetur, reiciendis.
+                  Blanditiis culpa ipsum magnam voluptatem. Tempora, facilis sunt consequatur, quae similique unde hic maxime reprehenderit
+                  laboriosam assumenda doloribus beatae nulla enim explicabo quas aspernatur, ut veniam. Cupiditate dolor ipsa consequuntur,
+                  iure maxime rerum velit eum expedita dignissimos eos! At omnis esse repellat maiores ipsum repudiandae, assumenda, quo
+                  illo non soluta in hic mollitia sint expedita ipsa debitis vel consequatur, cupiditate enim inventore molestiae.
+               </p>
             </div>
          </ContentWrapper>
          <style jsx>{`
