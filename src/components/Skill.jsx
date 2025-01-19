@@ -7,7 +7,7 @@ import { SiCanva } from "react-icons/si";
 import { SiNovu } from "react-icons/si";
 import { GrResume } from "react-icons/gr";
 import { FaSquarespace } from "react-icons/fa";
-import Video from "next-video";
+import Link from "next/link";
 import Image from "next/image";
 import I1 from "../../public/images/Home02.jpeg";
 import I2 from "../../public/images/men.jpg";
@@ -682,7 +682,7 @@ const Skill = () => {
                      solutions.
                   </p>
                </div>
-               <div className='relative h-screen  overflow-hidden '>
+               <div className='relative h-screen   overflow-hidden '>
                   {/* Slide Content */}
                   <div className='relative h-full  lg:flex lg:flex-col justify-center items-center'>
                      {slides.map((slide, index) => (
@@ -692,7 +692,7 @@ const Skill = () => {
                      ${currentSlide === index ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}
                      lg:flex flex-col md:flex-row justify-center items-center bg-white text-black p-4`}
                         >
-                           <div className='lg:w-1/2 p-4'>
+                           <div className='lg:w-1/2 lg:p-4'>
                               <h1 className='font-{Dennis Sans, sans-serif}  md:text-6xl text-xl font-bold my-5 text-blue-700  '>
                                  {slide.id}
                               </h1>
@@ -705,7 +705,7 @@ const Skill = () => {
                               </h2>
                               <p className='font-{Dennis Sans, sans-serif}  font-light md:text-lg text-base leading-7'>{slide.solution}</p>
                            </div>
-                           <div className='lg:w-1/2 w-full flex justify-center items-center shadow-2xl shadow-black'>
+                           <div className='lg:w-1/2 hidden w-full lg:flex justify-center items-center shadow-2xl shadow-black'>
                               <Image
                                  src={slide.image}
                                  width={960}
@@ -719,7 +719,7 @@ const Skill = () => {
                   </div>
 
                   {/* Up and Down Arrows */}
-                  <div className='absolute lg:top-[50%] top-20 right-0 flex lg:flex-col gap-4 justify-between items-center px-4'>
+                  <div className='absolute lg:top-[50%] top-80 right-0 flex lg:flex-col gap-4 justify-between items-center px-4'>
                      {/* Up Arrow */}
                      <button onClick={handlePrevSlide} className='text-white bg-black p-4 rounded-full shadow-lg '>
                         &#8592;
@@ -732,17 +732,40 @@ const Skill = () => {
                   </div>
                </div>
             </div>
-
-            <div>
-               <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum distinctio quidem obcaecati ratione omnis quos
-                  explicabo nihil modi impedit cupiditate, cum repellendus rem tempora labore dolor laborum fugiat molestiae. Corrupti
-                  commodi repudiandae animi error cumque ipsum fuga aliquid, asperiores, omnis rerum, quidem amet. Consectetur, reiciendis.
-                  Blanditiis culpa ipsum magnam voluptatem. Tempora, facilis sunt consequatur, quae similique unde hic maxime reprehenderit
-                  laboriosam assumenda doloribus beatae nulla enim explicabo quas aspernatur, ut veniam. Cupiditate dolor ipsa consequuntur,
-                  iure maxime rerum velit eum expedita dignissimos eos! At omnis esse repellat maiores ipsum repudiandae, assumenda, quo
-                  illo non soluta in hic mollitia sint expedita ipsa debitis vel consequatur, cupiditate enim inventore molestiae.
-               </p>
+            <div className='py-20'>
+               <div className=''>
+                  <div className='pb-16'>
+                     <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                        INTERFACE DESIGNS
+                     </h1>
+                     <p className='px-8 mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} '>
+                        I created low fidelity wireframes to quickly sketch out and explore various design ideas and concepts. Wireframes
+                        are flexible, making it easier to make changes based on feedback without significant time and resource investment.
+                        Then with the help of wireframes, I designed Interface screens for NUstart for the new user flows keeping in mind
+                        the product guidelines.
+                     </p>
+                  </div>
+               </div>
+               <div className='flex flex-col justify-end items-end'>
+                  <Link
+                     href={"/lowfidelity"}
+                     className='font-{Rmneue, sans-serif} text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8 border-t-2 border-b-2 border-white py-4 w-1/2 '
+                  >
+                     Low-Fidelity Wireframes
+                  </Link>
+                  <Link
+                     href={"/highfidelity"}
+                     className='font-{Rmneue, sans-serif} text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8  border-white py-4 w-1/2 '
+                  >
+                     High-Fidelity Design
+                  </Link>
+                  <Link
+                     href={"/prototype"}
+                     className='font-{Rmneue, sans-serif} text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8 border-t-2 border-b-2 border-white py-4 w-1/2 '
+                  >
+                     Prototype
+                  </Link>
+               </div>
             </div>
          </ContentWrapper>
          <style jsx>{`

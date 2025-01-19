@@ -11,7 +11,7 @@ const certificate = () => {
                <div className='w-20 flex justify-center items-center mx-auto border-b-4 border-green-500 rounded '></div>
             </div>
             <div className='flex items-center justify-center pt-8 mx-4'>
-               <Image src={I1} width={500} height={500} />
+               <Image src={I1} width={500} height={500} alt='go' />
             </div>
          </ContentWrapper>
       </div>
