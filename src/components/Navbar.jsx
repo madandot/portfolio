@@ -26,7 +26,7 @@ const Navbar = () => {
                   </Link>
                </div>
                <div className='md:flex hidden gap-x-12 capitalize'>
-                  <Link href={"/skills"} onClick={handleLinkClick}>
+                  <Link href={"/work"} onClick={handleLinkClick}>
                      Work
                   </Link>
                   <Link href={"/project"} onClick={handleLinkClick}>

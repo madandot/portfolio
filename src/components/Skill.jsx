@@ -7,13 +7,7 @@ import { SiCanva } from "react-icons/si";
 import { SiNovu } from "react-icons/si";
 import { GrResume } from "react-icons/gr";
 import { FaSquarespace } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import { FiDownload } from "react-icons/fi";
-import { FaBold } from "react-icons/fa";
-import { MdDelete } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -83,7 +77,7 @@ const Skill = () => {
       <>
          <ContentWrapper>
             <div className='flex justify-between items-center bg-black text-white w-full '>
-               <div className=' text-[16vw] font-normal font-{Dennis Sans, sans-serif} animate-slide-up '>NuStart</div>
+               <div className=' text-[16vw] font-normal font-{Dennis Sans, sans-serif} animate-slide-up px-2 '>NuStart</div>
                <div>
                   <IoIosArrowRoundDown size={250} className='animate-slide-up icon hidden md:flex' />
                   <IoIosArrowRoundDown size={50} className='animate-slide-up icon md:hidden flex' />
@@ -128,7 +122,7 @@ const Skill = () => {
                      </div>
                   </div>
                   <div>
-                     <h1 className='md:w-[400px] mt-5 font-{Dennis Sans, sans-serif} lg:text-6xl text-3xl font-normal leading-[70px] -tracking-[-1.3px] '>
+                     <h1 className='md:w-[400px] mt-5 font-{Dennis Sans, sans-serif} lg:text-6xl text-3xl font-normal lg:leading-[70px] -tracking-[-1.3px] '>
                         Designing Tools to Build Better Futures
                      </h1>
                   </div>
@@ -190,7 +184,7 @@ const Skill = () => {
             </div>
             <div className=''>
                <div className='border-b-2 border-[#ffffff4d] lg:h-[50vh] flex lg:justify-center lg:items-center px-8 py-4 lg:py-0'>
-                  <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw]'>
+                  <h1 className='font-{Dennis Sans, sans-serif} lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw]'>
                      #01 <br />
                      Secondary Research
                   </h1>
@@ -587,7 +581,7 @@ const Skill = () => {
                </div>
             </div>
             <div className='bg-[#141414] text-white'>
-               <div className='lg:px-8 px-2 pt-16 pb-16'>
+               <div className='lg:px-8 px-4 pt-16 pb-16'>
                   <h1 className='font-{Dennis Sans, sans-serif} md:px-8 md:text-4xl text-3xl font-semibold my-5 -tracking-[1px]'>
                      _______ User Journey Map
                   </h1>
@@ -681,7 +675,7 @@ const Skill = () => {
                   </p>
                </div>
                <div>
-                  <p className='lg:px-8  mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8 text-center'>
+                  <p className='lg:px-8 px-2  mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8 text-center'>
                      Mapping the customer journey was very insightful. It helped me empathize with the users and define their pain points.
                      Gaining transparency into user thoughts and actions while looking for a roommate provided an opportunity to understand
                      user behavior better. After conducting user research and creating personas and a customer journey map, I identified
@@ -773,6 +767,68 @@ const Skill = () => {
                   >
                      Prototype
                   </Link>
+               </div>
+            </div>
+            <div className=' px-8'>
+               <div className=''>
+                  <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                     _______ Key Takeaways.
+                  </h1>
+                  <p className='lg:px-8 lg:mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8'>
+                     Our resume-building website is crafted with the user in mind, ensuring a seamless, intuitive, and efficient experience.
+                     By utilizing accessible fonts and a clear text hierarchy, we provide a easily navigable interface. This focus on user
+                     experience helps job seekers create standout resumes effortlessly, with real-time feedback, flexible customization
+                     options, and affordable solutions.
+                  </p>
+               </div>
+               <div className='pb-8'>
+                  <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                     _______ What I Learned.
+                  </h1>
+                  <p className='lg:px-8 lg:mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8'>
+                     As a UX designer working on a resume-building website, I have gained valuable insights and knowledge through the design
+                     process. Some of the key things I have learned include understanding user needs, conducting user research, writing and
+                     creating wireframes, developing prototypes, and honing my visual design skills. This comprehensive approach ensures
+                     that the final product is user-friendly, accessible, and meets the expectations of job seekers.
+                  </p>
+               </div>
+            </div>
+            <div className='lg:min-h-screen bg-white text-black pl-8 lg:flex py-8 items-center'>
+               <div>
+                  <h1 className='text-black lg:leading-[6.3vw] -tracking-[0.26px] font-serif lg:text-[5.2vw] text-4xl font-normal'>
+                     Thank you for viewing.
+                  </h1>
+               </div>
+               <div className='lg:mt-24 mt-4 pl-8 lg:w-full lg:max-w-[53.98rem] '>
+                  <div className='flex justify-start items-start text-left border-t-[1px] border-b-[1px] border-black '>
+                     <h1 className='font-[Dennis sans, sans-serif] -tracking-[0.5px] text-[28px] font-semibold leading-[28px] py-4'>
+                        Next Step
+                     </h1>
+                  </div>
+                  <div className='flex flex-col'>
+                     <Link
+                        href={"/productdesigner"}
+                        className='font-[Dennis sans, sans-serif] -tracking-[0.5px] lg:text-[28px] text-lg font-normal leading-[28px] border-b-[1px] py-4 border-black px-8 text-gray-400
+                        hover:text-black transition-colors ease-in-out duration-500 text-right'
+                     >
+                        View Next Project
+                     </Link>
+                     <Link
+                        href={"https://www.linkedin.com/in/madan-h-b42195334/"}
+                        target='_blank'
+                        className='font-[Dennis sans, sans-serif] -tracking-[0.5px] lg:text-[28px] text-lg font-normal leading-[28px] border-b-[1px] py-4 border-black px-8 text-gray-400
+                        hover:text-black transition-colors ease-in-out duration-500 text-right'
+                     >
+                        Find Me On LinkedIn
+                     </Link>
+                     <Link
+                        href={"mailto:reddymadan0512@gmail.com"}
+                        className='font-[Dennis sans, sans-serif] -tracking-[0.5px] lg:text-[28px] text-lg font-normal leading-[28px] border-b-[1px] py-4 border-black px-8 text-gray-400
+                        hover:text-black transition-colors ease-in-out duration-500 text-right'
+                     >
+                        Contact Me
+                     </Link>
+                  </div>
                </div>
             </div>
          </ContentWrapper>
