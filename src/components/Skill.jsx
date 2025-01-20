@@ -2,11 +2,19 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ContentWrapper from "./ContentWrapper";
-import { IoIosArrowRoundDown } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowRoundDown } from "react-icons/io";
 import { SiCanva } from "react-icons/si";
 import { SiNovu } from "react-icons/si";
 import { GrResume } from "react-icons/gr";
 import { FaSquarespace } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { FiDownload } from "react-icons/fi";
+import { FaBold } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+
 import Link from "next/link";
 import Image from "next/image";
 import I1 from "../../public/images/Home02.jpeg";
@@ -75,7 +83,7 @@ const Skill = () => {
       <>
          <ContentWrapper>
             <div className='flex justify-between items-center bg-black text-white w-full '>
-               <div className=' text-[16vw] font-normal font-{Dennis Sans, sans-serif} animate-slide-up '>Start</div>
+               <div className=' text-[16vw] font-normal font-{Dennis Sans, sans-serif} animate-slide-up '>NuStart</div>
                <div>
                   <IoIosArrowRoundDown size={250} className='animate-slide-up icon hidden md:flex' />
                   <IoIosArrowRoundDown size={50} className='animate-slide-up icon md:hidden flex' />
@@ -746,22 +754,22 @@ const Skill = () => {
                      </p>
                   </div>
                </div>
-               <div className='flex flex-col justify-end items-end'>
+               <div className='flex flex-col lg:justify-end lg:items-end'>
                   <Link
                      href={"/lowfidelity"}
-                     className='font-{Rmneue, sans-serif} text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8 border-t-2 border-b-2 border-white py-4 w-1/2 '
+                     className='font-{Rmneue, sans-serif} lg:text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8 border-t-2 border-b-2 border-white py-4 lg:w-1/2  '
                   >
                      Low-Fidelity Wireframes
                   </Link>
                   <Link
                      href={"/highfidelity"}
-                     className='font-{Rmneue, sans-serif} text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8  border-white py-4 w-1/2 '
+                     className='font-{Rmneue, sans-serif} lg:text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8  border-white py-4 lg:w-1/2 '
                   >
                      High-Fidelity Design
                   </Link>
                   <Link
                      href={"/prototype"}
-                     className='font-{Rmneue, sans-serif} text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8 border-t-2 border-b-2 border-white py-4 w-1/2 '
+                     className='font-{Rmneue, sans-serif} lg:text-[26px] font-normal leading-[140%] capitalize -tracking-[1px] px-8 border-t-2 border-b-2 border-white py-4 lg:w-1/2 '
                   >
                      Prototype
                   </Link>
