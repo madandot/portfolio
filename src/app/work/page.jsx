@@ -1,12 +1,104 @@
 import React from "react";
 import ContentWrapper from "@/components/ContentWrapper";
+import Link from "next/link";
+import Image from "next/image";
+import I1 from "../../../public/images/Music/Dell.jpeg";
+import I2 from "../../../public/images/Music/Music.jpg";
+import I3 from "../../../public/images/Music/Jacket.jpg";
+import I4 from "../../../public/images/Music/03.jpg";
 
 const work = () => {
    return (
       <div>
          <ContentWrapper>
-            <div>
-               <h1 className='text-center text-white pt-32'>work</h1>
+            <div className='min-h-screen flex flex-col justify-center px-8 gap-4  '>
+               <h1 className='leading-[2.8vm]  w-[90%] font-semibold text-[2.2vw] font-[Rmneue, snas-serif]'>
+                  I’m Madan, a UI/UX Designer.
+               </h1>
+               <p className='leading-[2.8vm] text-[#929292] w-[90%] font-light text-[2.2vw] font-[Rmneue, snas-serif]'>
+                  I enjoy crafting user-centric, delightful, and human-centered experiences that resonate with users. My focus is on
+                  creating designs that are not only visually appealing but also intuitive and functional.
+               </p>
+            </div>
+            <div className='min-h-screen gap-8 grid grid-cols-2 justify-items-center py-8'>
+               <div className='relative w-fit'>
+                  <Link href={"/nustart"} className='relative  group '>
+                     <Image
+                        src={I1}
+                        width={800}
+                        height={1000}
+                        alt='Home'
+                        className='opacity-[9.50] group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                     />
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>Resume Builder</h1>
+                     </div>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>
+                           Zidio Development - 2024
+                        </h1>
+                     </div>
+                  </Link>
+               </div>
+               <div className='relative w-fit'>
+                  <Link href={"/productdesigner"} className='relative block group'>
+                     <Image
+                        src={I2}
+                        width={800}
+                        height={1000}
+                        alt='Home'
+                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                     />
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>Music Player</h1>
+                     </div>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif] w-[80%]'>
+                           Accenture North America Product Design - 2024
+                        </h1>
+                     </div>
+                  </Link>
+               </div>
+               <div className='relative w-fit flex justify-center items-center'>
+                  <Link href={"https://filmplex.vercel.app/"} target='_black' className='relative block group'>
+                     <Image
+                        src={I4}
+                        width={800}
+                        height={1000}
+                        alt='Home'
+                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                     />
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>Filmplex Clone</h1>
+                     </div>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif] w-[80%]'>
+                           College Project - 2023
+                        </h1>
+                     </div>
+                  </Link>
+               </div>
+               <div className='relative w-fit'>
+                  <Link href={"https://light-studio-ten.vercel.app/"} target='_black' className='relative block group'>
+                     <Image
+                        src={I3}
+                        width={800}
+                        height={1000}
+                        alt='Home'
+                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                     />
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-black font-bold text-2xl font-[Rmneue, sans-serif]'>
+                           LightStudio Online Shopping
+                        </h1>
+                     </div>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                        <h1 className='leading-[2.8vm] text-black font-bold text-2xl font-[Rmneue, sans-serif] w-[80%]'>
+                           College Project - 2023
+                        </h1>
+                     </div>
+                  </Link>
+               </div>
             </div>
          </ContentWrapper>
       </div>
