@@ -11,8 +11,8 @@ const work = () => {
    return (
       <div>
          <ContentWrapper>
-            <div className='min-h-screen flex flex-col justify-center px-8 gap-4  '>
-               <h1 className='leading-[2.8vm]  w-[90%] font-semibold text-[2.2vw] font-[Rmneue, snas-serif]'>
+            <div className='lg:h-screen h-[50vh] flex flex-col justify-center  px-8 gap-4  '>
+               <h1 className='leading-[2.8vm]  lg:w-[90%] font-semibold text-[2.2vw] font-[Rmneue, snas-serif]'>
                   I’m Madan, a UI/UX Designer.
                </h1>
                <p className='leading-[2.8vm] text-[#929292] w-[90%] font-light text-[2.2vw] font-[Rmneue, snas-serif]'>
@@ -20,7 +20,7 @@ const work = () => {
                   creating designs that are not only visually appealing but also intuitive and functional.
                </p>
             </div>
-            <div className='min-h-screen gap-8 grid grid-cols-2 justify-items-center py-8'>
+            <div className='lg:min-h-screen lg:gap-8 gap-4 grid lg:grid-cols-2 px-8 lg:px-0 justify-items-center py-8'>
                <div className='relative w-fit'>
                   <Link href={"/nustart"} className='relative  group '>
                      <Image
@@ -66,7 +66,7 @@ const work = () => {
                         width={800}
                         height={1000}
                         alt='Home'
-                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500 lg:h-[610px]'
                      />
                      <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
                         <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>Filmplex Clone</h1>

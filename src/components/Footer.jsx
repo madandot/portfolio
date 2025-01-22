@@ -7,7 +7,7 @@ const Footer = () => {
    return (
       <div>
          <ContentWrapper>
-            <div className=' px-8 py-8 flex gap-8 items-center justify-around'>
+            <div className='bg-[#141414] px-8 py-8 grid lg:grid-flow-col  gap-8 items-center justify-around'>
                <div className=''>
                   <Link href={"/work"} className='text-white font-sans text-[21px] font-light leading-6 underline'>
                      Madan HanumanthReddy
