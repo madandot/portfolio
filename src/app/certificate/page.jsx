@@ -1,17 +1,25 @@
 import ContentWrapper from "@/components/ContentWrapper";
 import Image from "next/image";
 import React from "react";
-import I1 from "../../../public/images/jp.png";
+import I1 from "../../../public/images/certifications/google.PNG";
+import I2 from "../../../public/images/certifications/Product_Design_Job_Simulation.PNG";
+import I3 from "../../../public/images/certifications/udemy.PNG";
+import I4 from "../../../public/images/certifications/zidio.PNG";
+
 const certificate = () => {
    return (
       <div>
          <ContentWrapper>
-            <div className='text-center md:text-xl font-bold uppercase pt-20'>
-               <h1>Certificate</h1>
-               <div className='w-20 flex justify-center items-center mx-auto border-b-4 border-green-500 rounded '></div>
-            </div>
-            <div className='flex items-center justify-center pt-8 mx-4'>
-               <Image src={I1} width={500} height={500} alt='go' />
+            <div className=''>
+               <div className='text-2xl font-bold  pt-20 px-8'>
+                  <h1>_______Certificate</h1>
+               </div>
+               <div className='grid grid-cols-2 gap-4 px-8 justify-items-center py-8'>
+                  <Image src={I1} width={800} height={800} alt='go' />
+                  <Image src={I2} width={800} height={800} alt='go' />
+                  <Image src={I3} width={800} height={800} alt='go' />
+                  <Image src={I4} width={800} height={800} alt='go' />
+               </div>
             </div>
          </ContentWrapper>
       </div>
