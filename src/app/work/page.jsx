@@ -12,10 +12,10 @@ const work = () => {
       <div>
          <ContentWrapper>
             <div className='lg:h-screen h-[50vh] flex flex-col justify-center  px-8 gap-4  '>
-               <h1 className='leading-[2.8vm]  lg:w-[90%] font-semibold text-[2.2vw] font-[Rmneue, snas-serif]'>
+               <h1 className='leading-[2.8vm]  lg:w-[90%] font-semibold text-[2.2vw] px-8 font-[Rmneue, snas-serif]'>
                   I’m Madan, a UI/UX Designer.
                </h1>
-               <p className='leading-[2.8vm] text-[#929292] w-[90%] font-light text-[2.2vw] font-[Rmneue, snas-serif]'>
+               <p className='leading-[2.8vm] text-[#929292] w-[90%] font-light px-8 text-[2.2vw] font-[Rmneue, snas-serif]'>
                   I enjoy crafting user-centric, delightful, and human-centered experiences that resonate with users. My focus is on
                   creating designs that are not only visually appealing but also intuitive and functional.
                </p>
