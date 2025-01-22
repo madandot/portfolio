@@ -19,10 +19,10 @@ const Navbar = () => {
    return (
       <div className='fixed top-0 left-0 w-full z-50 '>
          <ContentWrapper>
-            <div className='flex lg:justify-center justify-between items-center text-base font-sans font-medium p-6 '>
+            <div className='flex lg:justify-center justify-between items-center text-base font-sans font-medium p-6 bg-white lg:bg-none '>
                <div className='lg:hidden flex'>
                   <Link href={"/"}>
-                     <h1>&copy; code by Madan</h1>
+                     <h1 className='text-[#5b5f60]'>&copy; code by Madan</h1>
                   </Link>
                </div>
                <div className='md:flex hidden gap-x-12 capitalize'>
@@ -55,8 +55,12 @@ const Navbar = () => {
                      Certificate
                   </Link>
                </div>
-               <div className='flex md:hidden items-center'>
-                  {mobileMenu ? <VscChromeClose onClick={toggleMobileMenu} /> : <SlMenu onClick={toggleMobileMenu} />}
+               <div className='flex md:hidden items-center '>
+                  {mobileMenu ? (
+                     <VscChromeClose onClick={toggleMobileMenu} />
+                  ) : (
+                     <SlMenu onClick={toggleMobileMenu} className='text-[#5b5f60]' />
+                  )}
                </div>
             </div>
             {mobileMenu && (
