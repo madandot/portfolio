@@ -51,7 +51,7 @@ const Navbar = () => {
                   style={{ zIndex: 50 }}
                >
                   <div className='rounded flex flex-col gap-y-12 py-4 px-8 text-2xl mb-4 font-{Dennis Sans, sans-serif} animate-slide-up'>
-                     <Link href={"/skills"} onClick={handleLinkClick}>
+                     <Link href={"/work"} onClick={handleLinkClick}>
                         Work
                      </Link>
                      <Link href={"/project"} onClick={handleLinkClick}>

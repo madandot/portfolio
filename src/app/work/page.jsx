@@ -11,17 +11,17 @@ const work = () => {
    return (
       <div>
          <ContentWrapper>
-            <div className='lg:h-screen h-[50vh] flex flex-col justify-center  px-8 gap-4  '>
-               <h1 className='leading-[2.8vm]  lg:w-[90%] font-semibold text-[2.2vw] px-8 font-[Rmneue, snas-serif]'>
+            <div className='lg:h-screen h-[50vh] pt-20 lg:pt-0 flex flex-col justify-center  px-8 gap-4  '>
+               <h1 className='lg:leading-[2.8vm]  lg:w-[90%] lg:font-semibold lg:text-[2.2vw] text-2xl lg:px-8 lg:font-[Rmneue, snas-serif]'>
                   I’m Madan, a UI/UX Designer.
                </h1>
-               <p className='leading-[2.8vm] text-[#929292] w-[90%] font-light px-8 text-[2.2vw] font-[Rmneue, snas-serif]'>
+               <p className=' text-[#929292] lg:w-[70%] font-normal text-xl lg:px-8 lg:text-4xl font-[Rmneue, snas-serif]'>
                   I enjoy crafting user-centric, delightful, and human-centered experiences that resonate with users. My focus is on
                   creating designs that are not only visually appealing but also intuitive and functional.
                </p>
             </div>
             <div className='lg:min-h-screen lg:gap-8 gap-4 grid lg:grid-cols-2 px-8 lg:px-0 justify-items-center py-8'>
-               <div className='relative w-fit'>
+               <div className='relative lg:w-fit'>
                   <Link href={"/nustart"} className='relative  group '>
                      <Image
                         src={I1}
