@@ -28,12 +28,12 @@ const work = () => {
                         width={800}
                         height={1000}
                         alt='Home'
-                        className='opacity-[9.50] group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                        className='opacity-[9.50] group-hover:opacity-100 transition-opacity ease-in-out duration-1000'
                      />
-                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
                         <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>Resume Builder</h1>
                      </div>
-                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
                         <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>
                            Zidio Development - 2024
                         </h1>
@@ -47,13 +47,13 @@ const work = () => {
                         width={800}
                         height={1000}
                         alt='Home'
-                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'
                      />
-                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
                         <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>Music Player</h1>
                      </div>
-                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
-                        <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif] w-[80%]'>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
+                        <h1 className='leading-[2.8vm] text-white font-bold lg:text-2xl font-[Rmneue, sans-serif] lg:w-[80%]'>
                            Accenture North America Product Design - 2024
                         </h1>
                      </div>
@@ -66,12 +66,12 @@ const work = () => {
                         width={800}
                         height={1000}
                         alt='Home'
-                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500 lg:h-[610px]'
+                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-1000 lg:h-[610px]'
                      />
-                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
                         <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif]'>Filmplex Clone</h1>
                      </div>
-                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
                         <h1 className='leading-[2.8vm] text-white font-bold text-2xl font-[Rmneue, sans-serif] w-[80%]'>
                            College Project - 2023
                         </h1>
@@ -85,14 +85,14 @@ const work = () => {
                         width={800}
                         height={1000}
                         alt='Home'
-                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-500'
+                        className='opacity-95 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'
                      />
-                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                     <div className='absolute flex justify-between top-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
                         <h1 className='leading-[2.8vm] text-black font-bold text-2xl font-[Rmneue, sans-serif]'>
                            LightStudio Online Shopping
                         </h1>
                      </div>
-                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500'>
+                     <div className='absolute flex justify-between bottom-10 left-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-1000'>
                         <h1 className='leading-[2.8vm] text-black font-bold text-2xl font-[Rmneue, sans-serif] w-[80%]'>
                            College Project - 2023
                         </h1>

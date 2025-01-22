@@ -5,7 +5,7 @@ import { CiSaveDown1 } from "react-icons/ci";
 
 const Resume = () => {
    const handleDownload = () => {
-      const fileUrl = "https://drive.google.com/file/d/1PmbduuRkEG60SQSecxunoR76-dM-rIrt/view?usp=drive_link";
+      const fileUrl = "https://drive.google.com/file/d/1QjI3-vTkHSv4oMJDBTlhNULsh7m9YLje/view?usp=sharing";
       const link = document.createElement("a");
       link.href = fileUrl;
       link.target = "_blank"; // Set the target to _blank to open in a new tab

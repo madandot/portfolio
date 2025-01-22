@@ -113,12 +113,12 @@ const Skill = () => {
                      <div>
                         <div className='md:pt-0 pt-4'>My Contribution</div>
                         <div className='text-[#ffffff80] pt-4 font-normal text-lg'>UX Research</div>
-                        <div className='text-[#ffffff80] pt-4 font-normal text-lg'>UI / UX Design</div>
+                        <div className='text-[#ffffff80] pt-1 font-normal text-lg'>UI / UX Design</div>
                      </div>
                      <div>
                         <div className='md:pt-0 pt-4'>Tools</div>
                         <div className='text-[#ffffff80] pt-4 font-normal text-lg'>Figma</div>
-                        <div className='text-[#ffffff80] pt-4 font-normal text-lg'>Miro</div>
+                        <div className='text-[#ffffff80] pt-1 font-normal text-lg'>Miro</div>
                      </div>
                   </div>
                   <div>
@@ -127,28 +127,28 @@ const Skill = () => {
                      </h1>
                   </div>
                   <div>
-                     <p className=' mt-5 text-xl font-light -tracking-[0.4px] leading-8'>
+                     <p className=' mt-5 text-xl font-normal tracking-wide leading-8'>
                         In today’s competitive job market, crafting a standout resume is more critical than ever. Many resume-building tools
                         complicate this process with rigid subscriptions, formatting issues, and overwhelming template choices. Our
                         platform, designed based on user feedback, offers an intuitive, user-friendly experience with ATS-optimized
                         templates and customizable designs. We’ve also simplified our subscription plans to provide greater flexibility for
-                        users. A key feature, the intelligent word suggestion tool, helps users articulate their skills effectively. By
+                        users. A key feature, the intelligent word suggestion tool, helps users communicate their skills effectively. By
                         focusing on functionality and user empowerment, our platform enables job seekers to create polished, professional
                         resumes with ease.
                      </p>
                   </div>
                </div>
                <div className='w-full h-screen hidden lg:flex '>
-                  <Image src={I1} width={800} height={500} className='w-full h-full object-cover rounded-lg' />
+                  <Image src={I1} width={800} height={500} className='w-full h-full object-cover rounded-lg' alt='home' />
                </div>
             </div>
             <div className='bg-white text-black text-center lg:h-[40vh] items-center flex justify-center flex-col '>
                <div className='mt-5 font-{Dennis Sans, sans-serif} text-6xl font-normal leading-[70px] -tracking-[1.3px] '>
                   HMW Statement
                </div>
-               <div className=' mt-5 text-xl font-light -tracking-[0.4px] leading-8 lg:w-[800px]'>
-                  How Met We help job seekers create standout, professional resumes easily and efficiently, while offering a flexible and
-                  intuitive platform that caters to diverse user needs and skill levels?
+               <div className=' mt-5 text-xl font-normal tracking-wide leading-8 lg:w-[800px]'>
+                  How Met We help job seekers create standout, professional resumes easily and efficiently, while offering a flexible and A
+                  user-friendly platform that meets the needs of users with different abilities and experience levels.
                </div>
             </div>
             <div className='h-[100vh] flex  justify-center items-center gap-x-4 animate-slide-up '>
@@ -172,7 +172,7 @@ const Skill = () => {
                   </div>
                </div>
                <div className='lg:px-10 px-4 py-10'>
-                  <p className='lg:text-center'>
+                  <p className='lg:text-center  mt-5 text-xl font-normal tracking-wide leading-8 '>
                      To understand user frustrations and requirements, I conducted interviews with individuals from various industries. The
                      goal was to gain insights into their needs to better design a user-friendly resume-building platform. Initially, we
                      assumed users struggled with technical issues like formatting and ATS compatibility. However, the research revealed
@@ -209,7 +209,7 @@ const Skill = () => {
                            <h1 className='py-4 md:px-8'>
                               <SiCanva size={100} className='text-blue-700' />
                            </h1>
-                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                           <p className='md:px-8 mb-4  mt-5 text-xl font-normal tracking-wide leading-8 font-sans '>
                               Canva offers a visually appealing platform with professionally designed templates, allowing users to create
                               polished resumes effortlessly, even without prior design skills. Its extensive template library and
                               user-friendly interface make the resume-building process straightforward and accessible. However, some users
@@ -222,7 +222,7 @@ const Skill = () => {
                            <h1 className='py-4 md:px-8'>
                               <FaSquarespace size={100} className='text-yellow-500' />
                            </h1>
-                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                           <p className='md:px-8 mb-4  text-xl font-normal tracking-wide leading-8 font-sans '>
                               Zety offers a unique value proposition by combining pre-written content with keyword suggestions, helping
                               users optimize their resumes for Applicant Tracking Systems (ATS) while tailoring them to specific job roles.
                               Its features ensure ATS compatibility, provide helpful content suggestions, and guide users through a
@@ -234,11 +234,11 @@ const Skill = () => {
                            <h1 className='py-4 md:px-8'>
                               <GrResume size={100} className='text-green-500' />
                            </h1>
-                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                           <p className='md:px-8 mb-4  mt-5 text-xl font-normal tracking-wide leading-8 font-sans '>
                               Resume.io focuses on ease of use, offering real-time previews and ATS optimization tools to help users quickly
                               refine their resumes to meet job market standards. Its modern interface enhances the user experience, making
-                              resume creation straightforward and efficient. However, the platform&aposs complex subscription models,
-                              limited customization options, and somewhat generic templates may limit its appeal for users seeking highly
+                              resume creation straightforward and efficient. However, the platform complex subscription models, limited
+                              customization options, and somewhat generic templates may limit its appeal for users seeking highly
                               personalized resumes.
                            </p>
                         </div>
@@ -246,12 +246,12 @@ const Skill = () => {
                            <h1 className='py-4 md:px-8'>
                               <SiNovu size={100} className='text-orange-600' />
                            </h1>
-                           <p className='md:px-8 mb-4 font-normal leading-[30px] -tracking-[0.4px] text-base font-{Dennis Sans, sans-serif} '>
+                           <p className='md:px-8 mb-4  mt-5 text-xl font-normal tracking-wide leading-8  '>
                               Novoresume provides a streamlined, intuitive experience that simplifies resume creation while delivering sleek
                               and professional results. Its user-friendly design and real-time preview feature make the process efficient
-                              and accessible, with a strong focus on modern aesthetics. However, the platform&aposs complex subscription
-                              plans, lack of ATS keyword suggestions, and restrictions on premium features may pose challenges for users
-                              seeking more comprehensive functionality. designs.
+                              and accessible, with a strong focus on modern aesthetics. However, the platform complex subscription plans,
+                              lack of ATS keyword suggestions, and restrictions on premium features may pose challenges for users seeking
+                              more comprehensive functionality. designs.
                            </p>
                         </div>
                      </div>
@@ -259,10 +259,8 @@ const Skill = () => {
                </div>
                <div className=' lg:flex justify-center items-center gap-4 py-8 lg:px-8 px-2 min-h-[400px] border-b-2 border-[#ffffff4d]'>
                   <div className=' flex flex-col justify-between'>
-                     <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
-                        User Reviews
-                     </h1>
-                     <p className='px-8 mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} w-full'>
+                     <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>User Reviews</h1>
+                     <p className=' mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} w-full'>
                         User Reviews I looked for user reviews on Play Store for different competitor apps to get more insights on user pain
                         points.
                      </p>
@@ -331,7 +329,7 @@ const Skill = () => {
                   <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
                      DEFINING THE PROBLEM.
                   </h1>
-                  <p className='px-8 mb-4 text-[#ffffffa8] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} w-full'>
+                  <p className='px-8 mb-4 text-[#ffffffa8] text-xl font-normal tracking-wide leading-8 '>
                      In a competitive job market, job seekers face significant challenges in creating standout resumes due to rigid
                      subscription models, complex formatting issues, and an overwhelming number of template choices in existing
                      resume-building tools. These barriers hinder users from crafting ATS-optimized resumes that effectively showcase their
@@ -352,20 +350,20 @@ const Skill = () => {
                   <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
                      User Surveys and Interviews
                   </h1>
-                  <p className='lg:px-8  mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8'>
+                  <p className='lg:px-8  mb-4 text-[#ffff] text-xl font-normal tracking-wide leading-8 '>
                      To understand the needs and pain points of users for our resume-building platform, I conducted primary research through
                      user surveys. The survey aimed to gather insights into user experiences, challenges, and preferences when creating
                      resumes. The data collected from the survey will be analyzed to identify user personas, pain points, and
                      decision-making processes. This research will guide the development of features that address the most common issues
-                     users face, ensuring the platform aligns with their needs and expectations. needs.
+                     users face, ensuring the platform aligns with their needs and expectations needs.
                   </p>
                </div>
                <div className='lg:h-[100vh] px-8 py-16 md:flex justify-center items-center '>
                   <div className='md:w-1/2'>
-                     <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+                     <h1 className='font-{Dennis Sans, sans-serif} mt-16 lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
                         _______ Target audience.
                      </h1>
-                     <p className='lg:px-8 lg:mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8'>
+                     <p className='lg:px-8 lg:mb-4 text-[#ffff] text-xl font-normal tracking-wide leading-8'>
                         The target audience includes recent graduates, mid-level professionals, and career switchers looking to create
                         ATS-compatible resumes. It also caters to freelancers, entrepreneurs, and HR professionals who need customizable
                         templates for showcasing skills and experience. The platform aims to provide an easy, efficient way for users to
@@ -401,7 +399,7 @@ const Skill = () => {
                      <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
                         01
                      </h1>
-                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                     <p className='py-8 font-sans font-normal text-xl leading-7 md:w-[500px] text-center'>
                         Job seekers face challenges with rigid and expensive subscription models in resume-building platforms, which often
                         lock them into long-term commitments and limit their ability to make necessary updates without incurring high costs.
                      </p>
@@ -410,16 +408,16 @@ const Skill = () => {
                      <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
                         02
                      </h1>
-                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                     <p className='py-8 font-sans font-normal text-xl leading-7 md:w-[500px] text-center'>
                         Users find formatting tools overly complex, leading to frustration and inconsistent resumes. They need a simple,
-                        intuitive solution for professional-looking results.
+                        user-friendly solution for professional-looking results.
                      </p>
                   </div>
                   <div className='bg-white text-black flex flex-col justify-center items-center'>
                      <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
                         03
                      </h1>
-                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                     <p className='py-8 user-friendly text-xl leading-7 md:w-[500px] text-center'>
                         Users find it confusing and overwhelming to choose from a large number of resume templates.
                      </p>
                   </div>
@@ -427,7 +425,7 @@ const Skill = () => {
                      <h1 className='border-2 border-green-600 w-20 h-20 flex justify-center items-center rounded-full font-semibold text-2xl '>
                         04
                      </h1>
-                     <p className='py-8 font-{Dennis Sans, sans-serif} font-light text-xl leading-7 md:w-[500px] text-center'>
+                     <p className='py-8 font-sans font-normal text-xl leading-7 md:w-[500px] text-center'>
                         Users have difficulty optimizing their resumes for Applicant Tracking Systems (ATS), which is critical for passing
                         automated screenings and reaching human reviewers.
                      </p>
@@ -474,8 +472,8 @@ const Skill = () => {
                            <h2 class='text-xl font-bold mb-2'>Bio</h2>
                            <p className='text-[#ffff] font-{Dennis Sans, sans-serif} font-normal text-lg leading-7'>
                               Nagendra has just graduated and is excited to enter the marketing field. He is full of energy but finds the
-                              process of creating a resume daunting. He is looking for a tool that will streamline the process and make it
-                              less overwhelming.
+                              process of creating a resume challenging. He is looking for a tool that will streamline the process and make
+                              it less overwhelming.
                            </p>
                         </div>
                         <div class='bg-blue-600 p-4 rounded-lg'>
@@ -665,6 +663,17 @@ const Skill = () => {
                   </div>
                </div>
             </div>
+            <div className='mb-8'>
+               <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>Product Goal</h1>
+               <p className='px-8 mb-4 text-[#ffffffa8] text-xl font-normal tracking-wide leading-8 '>
+                  The goal is to develop a user-friendly platform that simplifies the resume creation process by offering a carefully
+                  curated selection of high-quality templates and meaningful customization options. This ensures that all users, regardless
+                  of their experience level, can effortlessly craft professional resumes that pass ATS filters and highlight their unique
+                  strengths, without feeling overwhelmed by excessive choices. To support this, the platform offers flexible subscription
+                  plans, providing users with access to advanced templates, expert guidance, and additional customization features, while
+                  maintaining affordable pricing for different needs and budgets.
+               </p>
+            </div>
             <div className='pt-16'>
                <div>
                   <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw] text-center'>
@@ -675,7 +684,7 @@ const Skill = () => {
                   </p>
                </div>
                <div>
-                  <p className='lg:px-8 px-2  mb-4 text-[#ffff] font-{Dennis Sans, sans-serif} font-light lg:text-xl leading-7 mb-8 text-center'>
+                  <p className='lg:px-8 px-2  mb-4 text-[#ffff] text-xl font-normal tracking-wide leading-8 text-center'>
                      Mapping the customer journey was very insightful. It helped me empathize with the users and define their pain points.
                      Gaining transparency into user thoughts and actions while looking for a roommate provided an opportunity to understand
                      user behavior better. After conducting user research and creating personas and a customer journey map, I identified
@@ -701,11 +710,11 @@ const Skill = () => {
                               <h1 className='font-{Dennis Sans, sans-serif}  md:text-4xl text-2xl font-semibold my-5 tracking-tight capitalize'>
                                  {slide.title}
                               </h1>
-                              <p className='font-{Dennis Sans, sans-serif}  font-light md:text-lg text-base leading-7'>{slide.content}</p>
+                              <p className='text-xl font-normal tracking-wide leading-8'>{slide.content}</p>
                               <h2 className='font-{Dennis Sans, sans-serif}  md:text-4xl text-2xl font-semibold my-5 tracking-tight capitalize'>
                                  Solution
                               </h2>
-                              <p className='font-{Dennis Sans, sans-serif}  font-light md:text-lg text-base leading-7'>{slide.solution}</p>
+                              <p className='text-xl font-normal tracking-wide leading-8'>{slide.solution}</p>
                            </div>
                            <div className='lg:w-1/2 hidden w-full lg:flex justify-center items-center shadow-2xl shadow-black'>
                               <Image

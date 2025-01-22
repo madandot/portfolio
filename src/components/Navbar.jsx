@@ -19,23 +19,39 @@ const Navbar = () => {
    return (
       <div className='fixed top-0 left-0 w-full z-50 '>
          <ContentWrapper>
-            <div className='flex justify-between items-center text-base font-sans font-medium p-6 bg-[#999d9e]'>
-               <div>
+            <div className='flex lg:justify-center justify-between items-center text-base font-sans font-medium p-6 '>
+               <div className='lg:hidden flex'>
                   <Link href={"/"}>
                      <h1>&copy; code by Madan</h1>
                   </Link>
                </div>
                <div className='md:flex hidden gap-x-12 capitalize'>
-                  <Link href={"/work"} onClick={handleLinkClick}>
+                  <Link
+                     href={"/"}
+                     onClick={handleLinkClick}
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-lg'
+                  >
+                     Home
+                  </Link>
+                  <Link
+                     href={"/work"}
+                     onClick={handleLinkClick}
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-lg'
+                  >
                      Work
                   </Link>
-                  <Link href={"/project"} onClick={handleLinkClick}>
-                     Info
-                  </Link>
-                  <Link href={"/resume"} onClick={handleLinkClick}>
+                  <Link
+                     href={"/resume"}
+                     onClick={handleLinkClick}
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-lg'
+                  >
                      Resume
                   </Link>
-                  <Link href={"/certificate"} onClick={handleLinkClick}>
+                  <Link
+                     href={"/certificate"}
+                     onClick={handleLinkClick}
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-lg'
+                  >
                      Certificate
                   </Link>
                </div>
@@ -45,7 +61,7 @@ const Navbar = () => {
             </div>
             {mobileMenu && (
                <div
-                  className={`absolute right-0  bg-[#999d9e] flex justify-center items-center  w-full h-screen text-center  transition duration-1000 ease-in-out transform ${
+                  className={`absolute right-0  bg-white text-black flex justify-center items-center  w-full h-screen text-center  transition duration-1000 ease-in-out transform ${
                      mobileMenu ? "translate-y-0" : "-translate-y-full"
                   }`}
                   style={{ zIndex: 50 }}
@@ -53,9 +69,6 @@ const Navbar = () => {
                   <div className='rounded flex flex-col gap-y-12 py-4 px-8 text-2xl mb-4 font-{Dennis Sans, sans-serif} animate-slide-up'>
                      <Link href={"/work"} onClick={handleLinkClick}>
                         Work
-                     </Link>
-                     <Link href={"/project"} onClick={handleLinkClick}>
-                        Info
                      </Link>
                      <Link href={"/resume"} onClick={handleLinkClick}>
                         Resume

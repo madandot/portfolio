@@ -25,12 +25,12 @@ const HeroBanner = () => {
    }, []);
 
    return (
-      <div className='bg-[#999d9e] md:h-screen h-[90vh] w-full relative overflow-hidden z-0'>
+      <div className='bg-[#FFF] md:h-screen h-[90vh] w-full relative overflow-hidden z-0'>
          <ContentWrapper>
             <div className='flex flex-col items-end absolute md:top-[300px] lg:right-[250px] right-4 top-[200px] transform opacity-100 animate-slide-up'>
                <div>
-                  <GoArrowDownRight size={50} className='text-white' />
-                  <div className='text-4xl font-bold font-{Dennis Sans, sans-serif} ml-10 mt-4 text-white'>
+                  <GoArrowDownRight size={50} className='text-black' />
+                  <div className='text-4xl font-bold font-{Dennis Sans, sans-serif} ml-10 mt-4 text-black'>
                      <h4>UI/UX Designer</h4>
                   </div>
                </div>
@@ -38,12 +38,12 @@ const HeroBanner = () => {
             {/* Continuous or reverse scrolling name */}
             <div className='absolute bottom-1 overflow-hidden whitespace-nowrap flex items-center justify-center'>
                <div className={`inline-block ${isScrollingDown ? "animate-scroll-reverse" : "animate-scroll"}`}>
-                  <span className='text-[15vw] font-normal text-transparent text-white font-{Dennis Sans, sans-serif}'>
+                  <span className='text-[15vw] font-normal text-transparent text-[#000000] font-{Dennis Sans, sans-serif}'>
                      Madan HanumanthReddy - Madan HanumanthReddy -
                   </span>
                </div>
             </div>
-            <div className='absolute md:top-[300px] top-[400px] -left-16 bg-black/70 text-white px-12 py-4 rounded-full flex items-center shadow-lg animate-slide-up'>
+            <div className='absolute md:top-[300px] top-[400px] -left-16 bg-white/50 border border-black text-black px-12 py-4 rounded-full flex items-center shadow-2xl animate-slide-up'>
                <span className='mr-4 pl-8 font-{Dennis Sans, sans-serif}'>Located in Bangalore </span>
                <FaGlobeAmericas
                   size={40}
