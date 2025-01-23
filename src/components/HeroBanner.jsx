@@ -38,7 +38,7 @@ const HeroBanner = () => {
             {/* Continuous or reverse scrolling name */}
             <div className='absolute bottom-1 overflow-hidden whitespace-nowrap flex items-center justify-center'>
                <div className={`inline-block ${isScrollingDown ? "animate-scroll-reverse" : "animate-scroll"}`}>
-                  <span className='text-[15vw] font-normal text-transparent text-[#000000] font-{Dennis Sans, sans-serif}'>
+                  <span className='text-[15vw] font-normal text-transparent text-[#000] font-{Dennis Sans, sans-serif}'>
                      Madan HanumanthReddy - Madan HanumanthReddy -
                   </span>
                </div>

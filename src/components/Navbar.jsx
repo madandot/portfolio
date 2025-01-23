@@ -29,28 +29,28 @@ const Navbar = () => {
                   <Link
                      href={"/"}
                      onClick={handleLinkClick}
-                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base'
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base hover:border-black transition duration-500 hover:text-black  '
                   >
                      Home
                   </Link>
                   <Link
                      href={"/work"}
                      onClick={handleLinkClick}
-                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base'
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base hover:border-black transition duration-500 hover:text-black  '
                   >
                      Work
                   </Link>
                   <Link
                      href={"/resume"}
                      onClick={handleLinkClick}
-                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base'
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base hover:border-black transition duration-500 hover:text-black  '
                   >
                      Resume
                   </Link>
                   <Link
                      href={"/certificate"}
                      onClick={handleLinkClick}
-                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base'
+                     className='px-4 py-2 rounded-full border border-[#999d9e] text-[#999d9e] tracking-wide text-base hover:border-black transition duration-500 hover:text-black  '
                   >
                      Certificate
                   </Link>

@@ -1,11 +1,11 @@
 import HeroBanner from "@/components/HeroBanner";
-import Skill from "@/components/Skill";
+import Product from "@/components/Product";
 
 export default function Home() {
    return (
       <div>
          <HeroBanner />
-         <Skill />
+         <Product />
       </div>
    );
 }

@@ -8,24 +8,24 @@ import { GiMusicalNotes } from "react-icons/gi";
 import { GiMusicalScore } from "react-icons/gi";
 import { LuKeyboardMusic } from "react-icons/lu";
 import Link from "next/link";
-import I1 from "../../../public/images/Music/freepik__02.jpg";
-import I2 from "../../../public/images/Music/freepik__01.jpg";
-import I3 from "../../../public/images/Music/02.png";
-import I4 from "../../../public/images/Music/freepik__backgrou.jpg";
-import I5 from "../../../public/images/Music/120shots_so.png";
-import I6 from "../../../public/images/Music/835shots_so.png";
-import I7 from "../../../public/images/Music/923shots_so.png";
-import I8 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View.png";
-import I9 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (1).png";
-import I10 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (2).png";
-import I11 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (3).png";
-import I12 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (5).png";
-import I13 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (6).png";
-import I14 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (7).png";
-import I15 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (8).png";
-import I16 from "../../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (9).png";
+import I1 from "../../public/images/Music/freepik__02.jpg";
+import I2 from "../../public/images/Music/freepik__01.jpg";
+import I3 from "../../public/images/Music/02.png";
+import I4 from "../../public/images/Music/freepik__backgrou.jpg";
+import I5 from "../../public/images/Music/120shots_so.png";
+import I6 from "../../public/images/Music/835shots_so.png";
+import I7 from "../../public/images/Music/923shots_so.png";
+import I8 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View.png";
+import I9 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (1).png";
+import I10 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (2).png";
+import I11 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (3).png";
+import I12 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (5).png";
+import I13 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (6).png";
+import I14 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (7).png";
+import I15 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (8).png";
+import I16 from "../../public/images/mockups/iPhone 15 Pro Max Mockup, Front View (9).png";
 
-const productdesigner = () => {
+const Product = () => {
    return (
       <div>
          <ContentWrapper>
@@ -142,7 +142,7 @@ const productdesigner = () => {
                            Young adults aged 16 to 21 years who primarily use iPhones for their music listening experience.
                         </p>
                      </div>
-                     <div className='border-b-2 border-black/50 my-2 py-2'>
+                     <div className=' my-2 py-2'>
                         <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e]'>
                            Previous design
                         </h1>
@@ -153,7 +153,7 @@ const productdesigner = () => {
                      </div>
                      <div className='border-b-2 border-black/50 my-2'>
                         <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e]'>
-                           My Process
+                           Process
                         </h1>
                         <p className=' mb-4 text-[#00000090] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif}'>
                            Users of the Musik app currently lack the ability to view song lyrics, which diminishes their overall music
@@ -207,13 +207,19 @@ const productdesigner = () => {
                         </h1>
                         <ul>
                            <li className=' text-[#00000090] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl text-base font-{Dennis Sans, sans-serif} '>
-                              <strong>Objective:</strong>Observe how users interact with music apps when looking for lyrics.
+                              <strong>Objective:</strong>Observe and understand how users currently interact with music apps when looking
+                              for lyrics.
                            </li>
                         </ul>
                         <ul className='list-disc px-4 font-{Dennis Sans, sans-serif} lg:text-xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e] '>
                            Findings:
                            <li className=' text-[#00000090] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl text-base font-{Dennis Sans, sans-serif} '>
-                              70% of users leave the app to search for lyrics on Google.
+                              A significant percentage of users leave the app to search for lyrics, disrupting their listening experience.
+                           </li>
+                           <li className=' text-[#00000090] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl text-base font-{Dennis Sans, sans-serif} '>
+                              Roughly 5 million people search for song lyrics on Google every day, highlighting the high demand for this
+                              type of content. This shows that users actively seek lyrics but often have to rely on external sources,
+                              presenting an opportunity for the Musik app to fulfill this need in-app.
                            </li>
                            <li className='  text-[#00000090] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl text-base font-{Dennis Sans, sans-serif} '>
                               Switching between apps was disruptive and reduced overall satisfaction.
@@ -348,4 +354,4 @@ const productdesigner = () => {
    );
 };
 
-export default productdesigner;
+export default Product;

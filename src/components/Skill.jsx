@@ -87,7 +87,7 @@ const Skill = () => {
                <div className='w-full'>
                   <div className='flex justify-between border-t-2  border-b-2 border-[#ffffff4d] font-{Dennis Sans, sans-serif} py-4 text-lg '>
                      <div>
-                        <h1>01</h1>
+                        <h1>02</h1>
                      </div>
                      <div>
                         <h2>Project Brief</h2>
