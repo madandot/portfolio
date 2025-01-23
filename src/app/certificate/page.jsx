@@ -11,8 +11,8 @@ const certificate = () => {
       <div>
          <ContentWrapper>
             <div className=''>
-               <div className='text-2xl font-bold  pt-20 px-8'>
-                  <h1>_______Certificate</h1>
+               <div className='text-2xl font-bold  pt-24 px-8'>
+                  <h1>_______Certificates</h1>
                </div>
                <div className='grid grid-cols-2 gap-4 px-8 justify-items-center py-8'>
                   <Image src={I1} width={800} height={800} alt='go' />
