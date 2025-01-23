@@ -20,7 +20,7 @@ import I6 from "../../../public/images/Formate.PNG";
 import I7 from "../../../public/images/template.PNG";
 import I8 from "../../../public/images/ATS.PNG";
 
-const skill = () => {
+const Skill = () => {
    const [currentSlide, setCurrentSlide] = useState(0);
 
    const slides = [
@@ -861,4 +861,4 @@ const skill = () => {
    );
 };
 
-export default skill;
+export default Skill;
