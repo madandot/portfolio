@@ -30,7 +30,7 @@ const Product = () => {
       <div>
          <ContentWrapper>
             <div className='bg-white text-black'>
-               <div className='min-h-screen max-w-7xl  mx-auto px-2  pb-8'>
+               <div className='min-h-screen  lg:px-8  px-4 pb-8'>
                   <div>
                      <div className=' relative pt-24 h-[70vh]'>
                         <FaMusic
@@ -278,7 +278,7 @@ const Product = () => {
                            FINAL DESIGN
                         </h1>
                         <div>
-                           <div className='grid grid-cols-2 justify-items-center'>
+                           <div className='grid lg:grid-cols-2 justify-items-center'>
                               <Image src={I11} width={500} height={500} alt='home'></Image>
                               <p className=' mb-4 text-[#00000090] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif} flex justify-center items-center'>
                                  When the user clicks on the lyrics button, the lyrics screen transitions smoothly, ensuring that the lyrics
@@ -287,7 +287,7 @@ const Product = () => {
                                  diverse user preferences, offering both flexibility and convenience.
                               </p>
                            </div>
-                           <div className='grid grid-cols-2 justify-items-center'>
+                           <div className='grid lg:grid-cols-2 justify-items-center'>
                               <Image src={I13} width={500} height={500} alt='home'></Image>
                               <p className=' mb-4 text-[#00000090] font-normal leading-[30px] -tracking-[0.4px] lg:text-xl font-{Dennis Sans, sans-serif}  flex justify-center items-center'>
                                  When the user clicks anywhere on the lyrics screen, it will disappear, smoothly transitioning back to the

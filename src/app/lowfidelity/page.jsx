@@ -37,8 +37,8 @@ const lowfidelity = () => {
                   Low-Fidelity
                </h1>
             </div>
-            <div className='lg:flex px-8 pt-4 justify-around'>
-               <div className='mb-4 flex flex-col gap-y-4'>
+            <div className='lg:flex gap-8 px-4 justify-center items-center justify-items-center'>
+               <div className='mb-4 flex flex-col gap-8'>
                   <Image src={I1} width={500} height={500} alt='image' />
                   <Image src={I10} width={500} height={500} alt='image' />
                   <Image src={I17} width={500} height={500} alt='image' />

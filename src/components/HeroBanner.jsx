@@ -27,7 +27,7 @@ const HeroBanner = () => {
    return (
       <div className='bg-[#FFF] h-screen  w-full relative overflow-hidden z-0'>
          <ContentWrapper>
-            <div className='flex flex-col items-end absolute lg:top-[300px]  right-4 top-[200px] transform opacity-100 animate-slide-up'>
+            <div className='flex flex-col items-end absolute lg:top-[200px]  right-4 top-[200px] transform opacity-100 animate-slide-up'>
                <div>
                   <GoArrowDownRight size={50} className='text-black' />
                   <div className='text-4xl font-bold font-{Dennis Sans, sans-serif} ml-10 mt-4 text-black'>
@@ -43,7 +43,7 @@ const HeroBanner = () => {
                   </span>
                </div>
             </div>
-            <div className='absolute lg:top-[300px] top-[400px] -left-16 bg-white/50 border border-black text-black px-12 py-4 rounded-full flex items-center shadow-2xl animate-slide-up'>
+            <div className='absolute lg:top-[230px] top-[400px] -left-16 bg-white/50 border border-black text-black px-12 py-4 rounded-full flex items-center shadow-2xl animate-slide-up'>
                <span className='mr-4 pl-8 font-{Dennis Sans, sans-serif}'>Located in Bangalore </span>
                <FaGlobeAmericas
                   size={40}

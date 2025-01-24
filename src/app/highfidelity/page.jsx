@@ -44,7 +44,7 @@ const highfidelity = () => {
                <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw] pt-28 px-8'>
                   High-Fidelity
                </h1>
-               <div className='lg:flex px-8 pt-4 justify-around'>
+               <div className='lg:flex gap-8 px-4 justify-center items-center justify-items-center'>
                   <div className='mb-4 flex flex-col gap-y-4'>
                      <Image src={I1} width={500} height={500} alt='image' />
                      <Image src={I10} width={500} height={500} alt='image' />
