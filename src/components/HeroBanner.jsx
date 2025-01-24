@@ -25,7 +25,7 @@ const HeroBanner = () => {
    }, []);
 
    return (
-      <div className='bg-[#FFF] md:h-screen h-[90vh] w-full relative overflow-hidden z-0'>
+      <div className='bg-[#FFF] lg:h-screen h-[90vh] w-full relative overflow-hidden z-0'>
          <ContentWrapper>
             <div className='flex flex-col items-end absolute lg:top-[300px] lg:right-[250px] right-4 top-[200px] transform opacity-100 animate-slide-up'>
                <div>
