@@ -76,7 +76,7 @@ const Skill = () => {
    return (
       <>
          <ContentWrapper>
-            <div className='flex justify-between items-center bg-black text-white w-full '>
+            <div className='flex justify-between items-center bg-black text-white w-full pt-16 '>
                <div className=' text-[16vw] font-normal font-{Dennis Sans, sans-serif} animate-slide-up px-2 '>NuStart</div>
                <div>
                   <IoIosArrowRoundDown size={250} className='animate-slide-up icon hidden md:flex' />
@@ -346,7 +346,7 @@ const Skill = () => {
                      #02 <br /> Primary Research
                   </h1>
                </div>
-               <div className='lg:h-[30vh] flex flex-col justify-center border-b-2 px-8'>
+               <div className=' flex flex-col justify-center border-b-2 px-8'>
                   <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
                      User Surveys and Interviews
                   </h1>
@@ -358,7 +358,7 @@ const Skill = () => {
                      users face, ensuring the platform aligns with their needs and expectations needs.
                   </p>
                </div>
-               <div className='lg:h-[100vh] px-8 py-16 md:flex justify-center items-center '>
+               <div className=' px-8 py-16 md:flex justify-center items-center '>
                   <div className='md:w-1/2'>
                      <h1 className='font-{Dennis Sans, sans-serif} mt-16 lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
                         _______ Target audience.
@@ -703,7 +703,7 @@ const Skill = () => {
                      ${currentSlide === index ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}
                      lg:flex flex-col md:flex-row justify-center items-center bg-white text-black p-4`}
                         >
-                           <div className='lg:w-1/2 lg:p-4'>
+                           <div className=' lg:p-4'>
                               <h1 className='font-{Dennis Sans, sans-serif}  md:text-6xl text-xl font-bold my-5 text-blue-700  '>
                                  {slide.id}
                               </h1>
@@ -716,7 +716,7 @@ const Skill = () => {
                               </h2>
                               <p className='text-xl font-normal tracking-wide leading-8'>{slide.solution}</p>
                            </div>
-                           <div className='lg:w-1/2 hidden w-full lg:flex justify-center items-center shadow-2xl shadow-black'>
+                           <div className='hidden  shadow-2xl shadow-black'>
                               <Image
                                  src={slide.image}
                                  width={960}
@@ -730,7 +730,7 @@ const Skill = () => {
                   </div>
 
                   {/* Up and Down Arrows */}
-                  <div className='absolute lg:top-[50%] top-80 right-0 flex lg:flex-col gap-4 justify-between items-center px-4'>
+                  <div className='absolute lg:top-[10%] top-80 right-0 flex lg:flex-col gap-4 justify-between items-center px-4'>
                      {/* Up Arrow */}
                      <button onClick={handlePrevSlide} className='text-white bg-black p-4 rounded-full shadow-lg '>
                         &#8592;

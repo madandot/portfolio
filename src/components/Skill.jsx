@@ -77,7 +77,7 @@ const Skill = () => {
       <>
          <ContentWrapper>
             <div className='flex justify-between items-center bg-black text-white w-full '>
-               <div className=' text-[16vw] font-normal font-{Dennis Sans, sans-serif} animate-slide-up px-2 '>NuStart</div>
+               <div className=' text-[16vw] font-normal font-{Dennis Sans, sans-serif} animate-slide-up px-2  '>NuStart</div>
                <div>
                   <IoIosArrowRoundDown size={250} className='animate-slide-up icon hidden md:flex' />
                   <IoIosArrowRoundDown size={50} className='animate-slide-up icon md:hidden flex' />
