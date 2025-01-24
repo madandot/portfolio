@@ -8,9 +8,16 @@ const Footer = () => {
       <div>
          <ContentWrapper>
             <div className='bg-[#141414] px-8 py-8 grid lg:grid-flow-col  gap-8 items-center justify-around'>
-               <div className=''>
+               <div className='flex flex-col gap-y-8'>
                   <Link href={"/work"} className='text-white font-sans text-[21px] font-light leading-6 underline'>
                      Madan HanumanthReddy
+                  </Link>{" "}
+                  <Link
+                     href={"https://github.com/madandot"}
+                     target='_blank'
+                     className='text-white font-sans text-[21px] font-light leading-6 underline '
+                  >
+                     Code By Madan HanumanthReddy
                   </Link>
                </div>
                <div>

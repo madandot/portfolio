@@ -30,7 +30,7 @@ const Product = () => {
       <div>
          <ContentWrapper>
             <div className='bg-white text-black'>
-               <div className='min-h-screen max-w-7xl mx-auto px-2 lg:px-0 pb-8'>
+               <div className='min-h-screen max-w-7xl  mx-auto px-2  pb-8'>
                   <div>
                      <div className=' relative pt-24 h-[70vh]'>
                         <FaMusic
@@ -229,7 +229,7 @@ const Product = () => {
                      <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e]'>
                         Paper Work
                      </h1>
-                     <div className='lg:flex'>
+                     <div className='grid grid-cols-3'>
                         <Image src={I1} width={500} height={500} alt='home'></Image>
                         <Image src={I2} width={500} height={500} alt='home'></Image>
                         <Image src={I4} width={500} height={500} alt='home'></Image>

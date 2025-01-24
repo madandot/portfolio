@@ -30,7 +30,7 @@ const productdesigner = () => {
       <div>
          <ContentWrapper>
             <div className='bg-white text-black'>
-               <div className='min-h-screen max-w-7xl mx-auto px-2 lg:px-0 pb-8'>
+               <div className='min-h-screen max-w-7xl mx-auto px-2 pb-8'>
                   <div>
                      <div className=' relative pt-24 h-[70vh]'>
                         <FaMusic
