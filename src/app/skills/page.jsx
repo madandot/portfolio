@@ -122,12 +122,12 @@ const Skill = () => {
                      </div>
                   </div>
                   <div>
-                     <h1 className='md:w-[400px] mt-5 font-{Dennis Sans, sans-serif} lg:text-6xl text-3xl font-normal lg:leading-[70px] -tracking-[-1.3px] '>
+                     <h1 className='md:w-[500px] mt-5 font-{Dennis Sans, sans-serif} lg:text-6xl text-3xl font-normal lg:leading-[70px] -tracking-[-1.3px] '>
                         Designing Tools to Build Better Futures
                      </h1>
                   </div>
                   <div>
-                     <p className=' mt-5 text-xl font-normal tracking-wide leading-8'>
+                     <p className=' mt-5 lg:text-xl text-[18px] font-sans font-normal '>
                         In today’s competitive job market, crafting a standout resume is more critical than ever. Many resume-building tools
                         complicate this process with rigid subscriptions, formatting issues, and overwhelming template choices. Our
                         platform, designed based on user feedback, offers an intuitive, user-friendly experience with ATS-optimized
@@ -326,10 +326,8 @@ const Skill = () => {
                   </div>
                </div>
                <div className='mb-8'>
-                  <h1 className='font-{Dennis Sans, sans-serif} px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
-                     DEFINING THE PROBLEM.
-                  </h1>
-                  <p className='px-8 mb-4 text-[#ffffffa8] text-xl font-normal tracking-wide leading-8 '>
+                  <h1 className='font-sans lg:text-[28px] text-[24px] font-bold  capitalize py-2 px-2'>DEFINING THE PROBLEM.</h1>
+                  <p className='font-{Dennis Sans, sans-serif} text-[16px] lg:text-[18px] font-normal py-2 px-2'>
                      In a competitive job market, job seekers face significant challenges in creating standout resumes due to rigid
                      subscription models, complex formatting issues, and an overwhelming number of template choices in existing
                      resume-building tools. These barriers hinder users from crafting ATS-optimized resumes that effectively showcase their
@@ -341,16 +339,16 @@ const Skill = () => {
                </div>
             </div>
             <div className='bg-[#141414] text-white'>
-               <div className=' lg:h-[50vh] flex lg:justify-center lg:items-center px-8 border-b-2 py-4 lg:py-0 '>
+               <div className='  flex lg:justify-center lg:items-center lg:px-8 px-2  py-4 '>
                   <h1 className='font-{Dennis Sans, sans-serif} -tracking-[0.26vw] lg:w-full font-normal lg:text-[5.2vw] text-2xl lg:leading-[6.3vw]'>
                      #02 <br /> Primary Research
                   </h1>
                </div>
-               <div className=' flex flex-col justify-center border-b-2 px-8'>
-                  <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
+               <div className=' flex flex-col justify-center'>
+                  <h1 className='font-{Dennis Sans, sans-serif} lg:px-8 px-2 text-[24px] lg:text-[28px] font-bold'>
                      User Surveys and Interviews
                   </h1>
-                  <p className='lg:px-8  mb-4 text-[#ffff] text-xl font-normal tracking-wide leading-8 '>
+                  <p className='lg:px-8 lg:text-[18px] px-2 text-[16px]  font-normal font-{Dennis Sans, sans-serif}'>
                      To understand the needs and pain points of users for our resume-building platform, I conducted primary research through
                      user surveys. The survey aimed to gather insights into user experiences, challenges, and preferences when creating
                      resumes. The data collected from the survey will be analyzed to identify user personas, pain points, and
@@ -358,12 +356,10 @@ const Skill = () => {
                      users face, ensuring the platform aligns with their needs and expectations needs.
                   </p>
                </div>
-               <div className=' px-8 py-16 md:flex justify-center items-center '>
+               <div className='lg:px-8 px-2 py-4 md:flex justify-center items-center '>
                   <div className='md:w-1/2'>
-                     <h1 className='font-{Dennis Sans, sans-serif} mt-16 lg:px-8 lg:text-4xl text-xl font-semibold my-5 -tracking-[1px]'>
-                        _______ Target audience.
-                     </h1>
-                     <p className='lg:px-8 lg:mb-4 text-[#ffff] text-xl font-normal tracking-wide leading-8'>
+                     <h1 className='font-sans lg:text-[28px] text-[24px] font-bold  capitalize py-2'>_______ Target audience.</h1>
+                     <p className='font-{Dennis Sans, sans-serif} text-[16px] lg:text-[18px] font-normal py-2 '>
                         The target audience includes recent graduates, mid-level professionals, and career switchers looking to create
                         ATS-compatible resumes. It also caters to freelancers, entrepreneurs, and HR professionals who need customizable
                         templates for showcasing skills and experience. The platform aims to provide an easy, efficient way for users to

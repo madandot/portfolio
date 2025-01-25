@@ -32,27 +32,12 @@ const Product = () => {
             <div className='bg-white text-black'>
                <div className='min-h-screen  lg:px-8  px-4 pb-8'>
                   <div>
-                     <div className=' relative pt-24 h-[70vh]'>
-                        <FaMusic
-                           size={150}
-                           className=' p-4 text-green-600 absolute lg:left-32 lg:top-20 right-0  shadow-2xl  rounded-full hover:shadow-green-600 transition-shadow duration-500 ease-in-out cursor-pointer  '
-                        />
-                        <IoMdMusicalNote
-                           size={150}
-                           className='  text-blue-700 lg:top-[180px] lg:right-60 bottom-0 absolute shadow-2xl  rounded-full hover:shadow-blue-600 transition-shadow duration-500 ease-in-out cursor-pointer '
-                        />
-                        <MdMusicOff
-                           size={150}
-                           className='  text-red-700 lg:bottom-[200px] lg:left-[500px] right-0 bottom-20 absolute shadow-2xl  rounded-full hover:shadow-red-600 transition-shadow duration-500 ease-in-out cursor-pointer '
-                        />
-                        <GiMusicalNotes
-                           size={150}
-                           className='  text-pink-700 lg:right-0 lg:bottom-8 absolute shadow-2xl top-64 rounded-full hover:shadow-pink-600 transition-shadow duration-500 ease-in-out cursor-pointer '
-                        />
-                        <GiMusicalScore
-                           size={150}
-                           className='text-black lg:bottom-10 lg:left-10 absolute shadow-2xl rounded-full hover:shadow-black transition-shadow duration-500 ease-in-out cursor-pointer'
-                        />
+                     <div className='grid lg:grid-cols-3 grid-cols-2 justify-items-center gap-16 lg:px-8 py-32'>
+                        <FaMusic className=' text-[100px] lg:text-[150px] p-4 text-green-600  shadow-2xl  rounded-full hover:shadow-green-600 transition-shadow duration-500 ease-in-out cursor-pointer  ' />
+                        <IoMdMusicalNote className='  text-[100px] lg:text-[150px]  text-blue-700   shadow-2xl  rounded-full hover:shadow-blue-600 transition-shadow duration-500 ease-in-out cursor-pointer ' />
+                        <MdMusicOff className='  text-[100px] lg:text-[150px]  text-red-700  shadow-2xl  rounded-full hover:shadow-red-600 transition-shadow duration-500 ease-in-out cursor-pointer ' />
+                        <GiMusicalNotes className='  text-[100px] lg:text-[150px]  text-pink-700  shadow-2xl  rounded-full hover:shadow-pink-600 transition-shadow duration-500 ease-in-out cursor-pointer ' />
+                        <GiMusicalScore className=' text-[100px] lg:text-[150px] text-black  shadow-2xl rounded-full hover:shadow-black transition-shadow duration-500 ease-in-out cursor-pointer' />
                      </div>
                   </div>
                   <div className='py-8'>
@@ -92,7 +77,7 @@ const Product = () => {
                            <div className='text-[#00000090] pt-4 font-normal text-lg'>Figma</div>
                         </div>
                      </div>
-                     <div className='border-b-2 border-black/50 my-2'>
+                     <div className=' my-2'>
                         <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e]'>
                            Introduction
                         </h1>
@@ -103,7 +88,7 @@ const Product = () => {
                            display feature that aligns with the apps design and functionality was essential.
                         </p>
                      </div>
-                     <div className='border-b-2 border-black/50 my-2'>
+                     <div className=' my-2'>
                         <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e]'>
                            Problem Statement
                         </h1>
@@ -134,7 +119,7 @@ const Product = () => {
                            aligns with user needs and expectations.
                         </p>
                      </div>
-                     <div className='border-b-2 border-black/50 my-2'>
+                     <div className=' my-2'>
                         <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e]'>
                            Target audience
                         </h1>
@@ -151,7 +136,7 @@ const Product = () => {
                            <p>Current design as it stands today</p>
                         </div>
                      </div>
-                     <div className='border-b-2 border-black/50 my-2'>
+                     <div className=' my-2'>
                         <h1 className='font-{Dennis Sans, sans-serif} lg:text-4xl text-xl font-semibold my-5 -tracking-[1px] text-[#27153e]'>
                            Process
                         </h1>
